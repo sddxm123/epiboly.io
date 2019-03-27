@@ -1,0 +1,114 @@
+body,html,div,p,a,span,img,button,input,nav{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 625%;
+}
+body{
+    background: #f0f2f5;
+}
+.dh{
+    width: 100%;
+    height: 65px;
+    background:white;
+    box-shadow:  0 0 5px rgba(0, 0, 0, .2);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.container{
+    .row{
+    position: relative;
+    }
+    .right{
+        // width: 804px;
+        height: 3000px;
+        // background: white;
+        margin-top: 25px;
+        border-radius: 5px;
+       
+        
+        .right-first{
+            // height: 57px;
+            color: #e84d60;
+            font-size: 15px;
+            background: #fff6de;
+            padding: 8px 35px 7px 21px;
+            margin-left: -15px;
+            margin-right: -15px;
+            margin-bottom: 14px;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px 0 rgba(31, 45, 61, .1);
+           
+        }
+
+        
+    }
+    .right-second{
+        height: 327px;
+        background: white;
+        margin-right: -15px;
+        margin-left: -15px;
+        padding: 28px;
+        border-radius: 5px;
+     
+        .option1{
+
+            border-bottom: 1px solid #efffef;
+
+            .option1-left{
+                color: #727f8f;
+                font-size: 15px;
+                display: inline-block;
+                padding: 4px 17px;
+                float: left;
+                overflow: hidden;
+                // margin-right: 50px;
+            }
+            .option1-list{
+                // background: red;
+                // padding-right: 84px;
+                // height: 80px;
+                display: flex;
+               justify-content: flex-start;
+                flex-wrap: wrap;
+
+                .listfirst{
+                    width: 62px;
+                    height: 25px;
+                    padding: 4px 17px;
+                    background: #4289dc;
+                    text-align: center;
+                    color: white;
+                    border-radius: 2px;
+                }
+                .list{
+                    line-height: 15px;
+                    display: inline-block;
+                    padding: 4px 10px;
+                    margin: 0  1.4px 14px 1.4px;
+                }
+            }
+        }
+       
+    }
+
+
+    .left{
+        height: 500px;
+        width: 280px;
+        background: black;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        border-radius: 5px;
+    }
+   
+}
+
+@media screen and (max-width:992px){
+    .left{
+        display: none;
+    }
+}
