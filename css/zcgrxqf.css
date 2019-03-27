@@ -1,0 +1,169 @@
+html,body,div,p,h1,h3,h2,li,ul,a,img,header{
+	padding:0;
+	margin:0;
+}
+body{
+	background-color:white;
+	font-size: 16px;
+	color: gray;
+	height:auto;
+	font-family: "微软雅黑"；
+	/*width:100%;*/
+	/*overflow: hidden;*/
+	/*min-width: 1240px;*/
+}
+
+a{
+	text-decoration: none;
+	color: white;
+
+}
+.wrap{
+	height: 666px;
+}
+.container{
+	/*width: 100%;*/
+	/*border-bottom:1px solid #9999;*/
+}
+
+header{
+	/*width: 100%;*/
+/*	min-width: 600px;*/
+	background-color: white;
+	border-bottom: 1px solid #9999;
+}
+
+.head{
+	/*width:100%;*/
+	margin:0 auto;
+	-webkit-display: flex;
+	 -webkit-justify-content:space-between;
+	 -webkit-flex: wrap;
+	 -moz-display: flex;
+	 -moz-justify-content: space-between;
+	 -moz-flex: wrap;
+	 display: flex;
+	 justify-content: space-between;
+	 flex: wrap;
+	 padding: 0 10px;
+
+}
+.head span{
+	display: inline-block;
+	line-height: 40px;
+	padding-left: 10px;
+}
+.left{
+	/*width: 200px;*/
+	-webkit-display: flex;
+	 -webkit-justify-content: space-around;
+	 -webkit-flex: wrap;
+	 -moz-display: flex;
+	 -moz-justify-content: space-around;
+	 -moz-flex: wrap;
+	 display: flex;
+	 justify-content: space-around;
+	 flex: wrap;
+	 padding: 20px 0;
+}
+.left h2{
+   color: #4289DB;
+   font-size: 30px;
+}
+.right{
+	padding: 20px 0;
+}
+
+.right>button{
+	padding: 10px 30px;
+	border:1px solid #4289DB;
+	border-radius: 10px;
+	color: #4289DB;
+	background-color: white;
+	outline: 0;
+}
+
+.right>button:hover{
+	background-color: #4289DB;
+	color: white;
+}
+
+.yhzc{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+/*.row{
+	border-bottom: none;
+}*/
+/*.btn{
+	padding: 10px 120px;
+	vertical-align: center;
+	
+}
+*/
+.form-control{
+	padding: 20px 20px;
+	line-height: 5px;
+}
+
+.button{
+	background-color: #4289DB;
+	color: white;
+}
+.button:hover{
+	background-color: red;
+	/*color: */
+}
+
+.zhmm{
+	display: flex;
+	justify-content: flex-start;
+	padding-bottom: 10px;
+}
+
+.zhmm span{
+	font-size: 12px;
+	display: block;
+	line-height: 20px;
+	padding-left: 10px;
+}
+.zhmm span a{
+	color: blue;
+}
+
+.fh{
+	margin:0 auto;
+}
+.fh p{
+	text-align: center;
+	line-height: 30px;
+	color: gray;
+}
+
+.fh p a{
+	color: gray;
+}
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+footer p{
+    text-align: center;
+}
+footer p span{
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.ms{
+	font-size: 25px;
+	color: #4289DB;
+}
+@media screen and  (max-width: 768px) {
+	.head span{
+		display: none;
+	}
+}

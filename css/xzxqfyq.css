@@ -1,0 +1,143 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div
+{
+	margin:0;
+	padding:0;
+	border:0;
+} 
+body{
+	background:#fff;
+	color:#333;
+	font-size:12px; 
+	/*margin-top:5px;*/
+	font-family:"SimSun","宋体","Arial Narrow";} 
+ul,ol{
+	list-style-type:none;
+} 
+select,input,img,select{
+	vertical-align:middle;
+} 
+a{
+	text-decoration:none;
+} 
+
+@media screen and  (max-width: 768px) {
+	.head span{
+		display: none;
+	}
+}
+.navbar{
+	background-color: white;
+	box-shadow: 0 1px 2px 0 rgba(31,45,61,.1);
+}
+.navbar-brand{
+	color: #4289DB;
+	font-size: 30px;
+}
+.navbar-header {
+	display: flex;
+	justify-content: flex-start;
+	
+}
+.navbar-header span{
+	line-height: 60px;
+    display: inline-block;
+    padding-left: 10px;
+
+}
+.navbar-header h2{
+	color: #4289DB ;
+	line-height: 60px;
+	font-weight: 700;
+}
+.btn{
+	border:1px solid #4289DB;
+	padding: 5px 20px;
+}
+
+.btn:hover{
+	color: white;
+	background-color: #4289DB ;
+
+}
+
+.yhzc{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.right{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.right h2{
+	color: #4289DB;
+}
+.right p{
+	color: gray;
+	padding-top: 10px;
+}
+.left img{
+	width: 68px;
+	height: auto;
+}
+
+.kfz{
+	width: 324px;
+	border-radius: 10px;
+	border: 1px solid #dde3eb;
+	margin:0 auto;
+	display: flex;
+	padding: 20px 20px;
+	justify-content: flex-start;
+	cursor: pointer;
+
+}
+
+.kfz:hover{
+	 box-shadow: 0px 0px 15px #cdcdcd;
+	 border:1px solid #4289DB;
+}
+
+
+.xqf{
+	width: 324px;
+	border-radius: 10px;
+	border: 1px solid #dde3eb;
+	margin:20px auto;
+	display: flex;
+	padding: 20px 20px;
+	justify-content: flex-start;
+	cursor: pointer;
+
+}
+
+.fh{
+	margin:0 auto;
+}
+.fh p{
+	text-align: center;
+	line-height: 30px;
+}
+
+.xqf:hover{
+	 box-shadow: 0px 0px 15px #cdcdcd;
+	 border:1px solid #4289DB;
+}
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+footer p{
+    text-align: center;
+}
+footer p span{
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.ms{
+	font-size: 25px;
+	color: #4289DB;
+}
