@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>火警 - 人力和项目外包服务平台</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1111494_q7pijjonnnj.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="top">
+        <!-- 头部 -->
+        <nav class="navbar navbar-default head" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="#">火警</a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">项目</a></li>
+                        <li><a href="#">会员</a></li>
+                        <li><a href="#">开发者</a></li>
+                        <li><a href="#">帮助</a></li>
+
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">注册</a></li>
+                        <li><a href="#">登录</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <div class="swiper-container lunbo">
+            <div class="swiper-wrapper lunbobg">
+                <div class="swiper-slide slide1">
+                    <h4>人力和项目外包服务平台</h4>
+                    <p>使企业和学生创业团队健康发展</p>
+                    <div class="btn-list">
+                        <a href="#" class="start-button">发布您的需求</a>
+                        <a href="#" class="project-button">查看项目列表</a>
+                    </div>
+
+                </div>
+                <div class="swiper-slide slide2">
+                    <img src="images/indexbg2.png" alt="">
+                    <div class="btn-list">
+                        <h4>新版阶段划分<br/>自主验收，轻松交付</h4>
+                        <a href="#" class="project-button">了解详情</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide3">
+
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <!--左箭头-->
+            <div class="swiper-button-next"></div>
+            <!--右箭头-->
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: true, //可选选项，自动滑动
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
+</body>
+
+</html>

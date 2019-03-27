@@ -1,0 +1,20 @@
+.head {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.head a {
+  color: red;
+}
+.head .logo {
+  font-size: 30px;
+  color: red;
+}
+.navbar-default .navbar-nav > li > a {
+  color: red;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
