@@ -1,0 +1,58 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;} 
+body{background:#fff;color:#333;font-size:12px; margin-top:5px;font-family:"SimSun","宋体","Arial Narrow";} 
+ul,ol{list-style-type:none;} 
+select,input,img,select{vertical-align:middle;} 
+a{text-decoration:none;} 
+
+
+body{
+	background: #eee;
+}
+header{
+	height: 64px;
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	border-bottom: 1px solid #ddd;
+}
+main{
+	/*min-width: 1120px;*/
+	margin: 80px auto 0;
+}
+.wrap{
+	max-width: 1120px;
+}
+.col-md-8{
+	padding: 2.5rem 4rem;
+	background: #fff;
+	border-radius: 2rem;
+}
+.col-md-4{
+	padding: 2.5rem 4rem;
+	background: blue;
+	border-radius: 2rem;
+}
+.type img{
+	width: 42px;
+	margin-bottom: .4rem;
+}
+.type span{
+	display: block;
+}
+.type label{
+	width: 95px;
+	text-align: center;
+	padding: 1.5rem;
+	border: 1px solid #fff;
+	border-radius: 1rem;
+}
+.type label:hover{
+	border: 1px solid #0069c4;
+}
+h3{
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
