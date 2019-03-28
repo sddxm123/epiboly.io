@@ -3,6 +3,9 @@ body{background:#fff;color:#333;font-size:12px; margin-top:5px;font-family:"SimS
 ul,ol{list-style-type:none;} 
 select,input,img,select{vertical-align:middle;} 
 a{text-decoration:none;} 
+a:hover{text-decoration: none;}
+.clear{clear: both;}
+
 
 
 body{
@@ -19,20 +22,21 @@ header{
 }
 main{
 	/*min-width: 1120px;*/
-	margin: 80px auto 0;
+	margin: 80px auto;
 }
-.wrap{
-	max-width: 1120px;
+.container{
+	/*max-width: 1120px;*/
+	padding: 0;
 }
 .col-md-8{
-	padding: 2.5rem 4rem;
+	padding: 2.5rem 3rem;
 	background: #fff;
 	border-radius: 2rem;
 }
 .col-md-4{
-	padding: 2.5rem 4rem;
-	background: blue;
-	border-radius: 2rem;
+	/*padding: 2.5rem 3rem;*/
+	/*background: #fff;*/
+	/*border-radius: 2rem;*/
 }
 .type img{
 	width: 42px;
@@ -40,6 +44,8 @@ main{
 }
 .type span{
 	display: block;
+	/*width: 95px;*/
+
 }
 .type label{
 	width: 95px;
@@ -47,12 +53,143 @@ main{
 	padding: 1.5rem;
 	border: 1px solid #fff;
 	border-radius: 1rem;
+	cursor: pointer;
 }
 .type label:hover{
 	border: 1px solid #0069c4;
 }
+.type label:hover span{
+	color: #0069c4;
+}
 h3{
-	font-size: 2rem;
+	font-size: 2.2rem;
 	font-weight: 700;
 	margin-bottom: 1.5rem;
+}
+.developer,.type{
+	margin-bottom: 3rem;
+}
+.developer .radio{
+	padding: 2rem 0;
+	font-size: 1.1rem;
+}
+.developer .radio i{
+	margin-right: .5rem;
+}
+.developer .radio-title{
+	margin-bottom: .5rem;
+}
+.developer .radio-tip{
+	padding-left: 1.8rem;
+	color: #888;
+}
+.form-input-top .inline{
+	display: inline-block;
+}
+.form-lable{
+	font-size: 1.6rem;
+	padding: .5rem 0 .5rem 1.5rem;
+}
+.pad .col-xs-4{
+	/*margin-left: .3em;*/
+	padding: .7rem;
+}
+.pad .col-xs-4 i{
+	/*margin-left: 4rem;*/
+}
+.pad+.row{
+	margin-top: 1rem;
+	padding-left: 1.5rem;
+}
+.p-left{
+	margin-top: 1rem;
+	padding-left: 1.5rem;
+}
+.view{
+	float: right;
+	margin: .5rem;
+	color: #0069c4;
+	cursor: pointer;
+}
+.fanli{
+	border: 1px solid #ddd;
+	border-radius: .5rem;
+	padding: 1rem;
+}
+.fanli p{
+	margin: .5rem 0;
+}
+.fanli b{
+	display: block;
+}
+.nin .col-sm-6{
+	margin: .8rem 0;
+}
+.nin label{
+	margin-bottom: .4rem;
+	font-weight: 400;
+}
+.web{
+	display: block;
+	margin: .5rem 0;
+}
+.webname{
+	position: relative;
+	margin: 1rem 0;
+}
+.webname label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3rem;
+	border-right: 1px solid #ccc;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+}
+.webname input{
+	width: 60%;
+	text-indent: 2.5rem;
+}
+.free{
+	display: inline-block;
+	padding: .2rem;
+	background: #f75288;
+	color: #fff;
+	border-radius: .4rem;
+	font-weight: 700;
+}
+.price{
+	color: #888;
+}
+.b-last .row{
+	margin: .8rem 0 1.5rem;
+}
+.fabu button{
+	display: block;
+	width: 10rem;
+	margin: 0 auto;
+	font-weight: 700;
+}
+
+
+
+.notice{
+	margin-left: .5rem;
+	padding: 2.5rem;
+	border-radius: 2rem;
+	background: #fff;
+}
+.notice h4{
+	font-weight: 700;
+	font-size:2.2rem; 
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid #ddd;
+}
+.notice .content{
+	padding-top: 1.2rem;
+}
+.notice .content p{
+	padding-top: 1.2rem;
+
 }
