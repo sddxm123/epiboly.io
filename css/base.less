@@ -1,21 +1,167 @@
-.head{
+.head {
     position: absolute;
-    top: 20px; 
+    top: 20px;
     left: 0;
-    right: 0; 
+    right: 0;
     z-index: 999;
+    .head-white{
+        border: 1px solid transparent;
+    }
+    .head-white:hover{
+        border: 1px solid #fff;
+        border-radius: 6px;
+    }
 }
-.head a{
-    color: red;
+// 用户登录后
+.top .login-user{
+    display: none;
+    position: relative;
+    >div{
+        position: relative;
+        display: block;
+    }
+    .user-menu{
+        display: none;
+        padding: 10px 0;
+        position: absolute;
+        right: 0px;
+        top: 60px;
+        width: 180px;
+        border-radius: 8px;
+        background-color: #fff;
+        a{
+            display: block;
+            height: 36px;
+            margin:5px 0;
+            line-height: 36px;
+            text-indent: 1.5rem;
+            color: #323a45;
+            &:hover{
+                background-color: #4289db;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        i{
+            margin-right: 10px;
+        }
+        li:nth-child(1){
+            height: 36px;
+            margin:5px 0;
+            line-height: 36px;
+            text-indent: 1.5rem;
+            color: #a9a9a9;
+        }
+    }
+    &:hover .user-menu{
+        display: block;
+    }
 }
-.head .logo{
+.user{
+    position: relative;
+    width: 80px;
+    border-bottom: 20px solid transparent;
+    cursor: pointer;
+    .portrait{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    i{
+        color: #e0e6ed;
+        font-size: 12px;
+        position: absolute;
+        right: 5px;
+        top: 15px;
+    }
+}
+
+
+// 头部
+.head a {
+    color: #fff
+}
+
+.head .logo {
     font-size: 30px;
-    color: red;
+    color: #e0e6ed;
+}
+.navbar-default{
+    background-color: transparent;
+    border: none;
 }
 .navbar-default .navbar-nav>li>a {
-    color: red;
+    color: #e0e6ed;
+    font-size: 14px;
+    font-weight: 700;
 }
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ccd3dc;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
 
+// 底部
+.foot {
+    padding-top: 60px;
+    background: #273444;
+    color: #fff;
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .foot-content ul {
+        li {
+            color: #8796A8;
+            font-size: 14px;
+            padding: 4px 0;
+
+            &:nth-child(1) {
+                color: #fff;
+                font-weight: 700;
+            }
+        }
+
+    }
+
+    .foot-copy {
+        text-align: center;
+        display: none;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .foot{
+        padding-top: 0;
+        .foot-content{
+            display: none;
+        }
+        .foot-copy{
+            display: block;
+            position: relative;
+            span:nth-child(1){
+                position: absolute;
+                left: 0;
+            }
+            span:nth-child(2){
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    .navbar-default .navbar-collapse{
+        background: #2d3237;
+    }
+}

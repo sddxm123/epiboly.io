@@ -13,8 +13,17 @@
 .lunbobg>div:nth-child(5){
     background: url(../images/indexbg.jpg) center/cover no-repeat;
 }
-
+// 轮播图第一张
 .slide1{
+    position: relative;
+    >div{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: left rgba(16,63,127,.3);
+    }
     color: #fff;
     h4{
         margin-top: 280px;
@@ -60,13 +69,183 @@
         border: 1px solid #fff;
     }
 }
-@media screen and (max-width:768px){
-    .slide1 .btn-list{
-        width: 400px;
-    }
-}
+// 轮播图第二张
 .slide2{
+    color: #fff;
+    >div{
+        max-width:  833px;
+        margin: 200px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
     img{
         width: 330px;
+        height: 280px;
+    }
+    .btn-list{
+        h4{
+            font-size: 40px;
+        }
+        a{
+            margin-top: 20px;
+            border: 1px solid #fff;
+            display: block;
+            border-radius: 5px;
+            width: 190px;
+            height: 49px;
+            font-size: 18px;
+            color: #fff;
+            line-height: 49px;
+            text-align: center;
+            &:hover{
+                background-color: #fff;
+                color: #4187db;
+                text-decoration: none;
+            }
+        }
     }
 }
+// 统计
+.figure-page{
+    margin-top: 20px;
+    text-align: center;
+    color: #8796A8;
+    h4{
+        font-size: 40px;
+    }
+    p{
+        font-size: 14px;
+    }
+
+}
+
+// process
+.process-page{
+    margin-top: 40px;
+}
+
+// 标题
+.process-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+// process-content
+.process-content{
+    border-bottom: 1px solid #f5f5f5;
+    img{
+        width: 100%;
+    }
+    .content-text{
+        margin-top: 60px;
+        p{
+            color: #979FA8;
+            font-size: 14px;
+            padding: 3px 0;
+        }
+        h5{
+            padding: 15px 0;
+            font-size: 36px;
+            font-weight: 700;
+        }
+        a{
+            color: #4289DB;
+        }
+    }
+}
+
+
+
+.anli{
+    img{
+        width: 90%;
+    }
+    h5{
+        margin-top: 60px;
+        font-size: 20px;
+        span{
+            color: red;
+        }
+    }
+    p{
+        font-size: 16px;
+        span{
+            margin-right: 10px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    .slide1 .btn-list{
+        width: 100%;
+    }
+    .lunbo{
+        height: 488px;
+        .slide1{
+            h4{
+                margin-top: 150px;
+            }
+        }
+        .slide2{
+            >div{
+                margin-top: 50px;
+                width: 100%;
+            }
+            img{
+                width: 230px;
+                height: 200px;
+                margin: 50px auto;
+            }
+            .btn-list{
+                width: 100%;
+                text-align: center;
+                h4{
+                    font-size: 28px;
+                }
+            }
+            a{
+                margin: 0 auto;
+                transform:scale(0.7)
+            }
+        }
+    }
+    .swiper-button-prev,.swiper-button-next{
+        display: none;
+    }
+    .figure-page{
+        h4{
+            font-size: 18px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    .process-content,.anli{
+        text-align: center;
+    }
+}
+
+/* 中型设备（台式电脑，992px 起） */
+@media screen and (min-width: 768px) and (max-width:992px){ 
+    .figure-page{
+        h4{
+            font-size: 20px;
+        }
+    }
+    .process-content{
+        text-align: center;
+    }
+    .anli{
+        text-align: left;
+    }
+    
+}
+
+@media screen and (min-width: 992px){ 
+    
+}
+
