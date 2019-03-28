@@ -2,16 +2,16 @@
   height: 648px;
 }
 .lunbobg > div:nth-child(2) {
-  background: url(../images/indexbg.jpg) center / cover no-repeat;
+  background: url(../img/indexbg.jpg) center / cover no-repeat;
 }
 .lunbobg > div:nth-child(3) {
   background: linear-gradient(-180deg, #1F2D3D 0, #3C4858 100%);
 }
 .lunbobg > div:nth-child(4) {
-  background: url(../images/indexbg3.png) center / cover no-repeat #282d50;
+  background: url(../img/indexbg3.png) center / cover no-repeat #282d50;
 }
 .lunbobg > div:nth-child(5) {
-  background: url(../images/indexbg.jpg) center / cover no-repeat;
+  background: url(../img/indexbg.jpg) center / cover no-repeat;
 }
 .slide1 {
   position: relative;
