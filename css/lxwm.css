@@ -26,22 +26,7 @@ a{
 	text-decoration:none;
 	color: gray;
 } 
-
-
-header{
-	width: 100%;
-	
-	position: relative;
-
-	
-}
-.nav{
-	width: 100%;
-	position: absolute;
-	height: 70px;
-	background-color:green;
-	top:10px;
-}
+ /*<!-- 背景图 -->*/
 .banner{
 	width: 100%;
 	height: 329px;
@@ -60,13 +45,14 @@ header{
 	background-color: #DDE3EB;
 	margin:0 auto;
 }
-
+/*<!-- 联系我们 -->*/
 .contact{
 	width: 100%;
-	padding: 50 0px; 
+	padding: 50px 0px; 
 }
 .contact h1{
 	text-align: center;
+	padding-bottom: 20px;
 }
 .contact-col{
 	width: 80%;
@@ -90,39 +76,41 @@ header{
 }
 
 
-.logo{
+
+ /*<!-- 码市 LOGO 下载 -->*/
+.w-logo{
 	width: 100%;
+	padding: 20px 0;
 	background-color: #DDE3EB;
 	
 }
 .logo1{
-	width:85%;
+	width:100%;
 	margin:0 auto;
-	    border-bottom: 1px solid #ced5dd;
+	border-bottom: 1px solid #ced5dd;
 }
-.logo2{
-	width:85%;
-	margin:0 auto;
-	/*-webkit-display: flex;
-	 -webkit-justify-content:space-between;
-	 -webkit-flex: wrap;
-	 -moz-display: flex;
-	 -moz-justify-content: space-between;
-	 -moz-flex: wrap;
-	 display: flex;
-	 justify-content: space-between;
-	 flex: wrap;*/
-	 padding: 30px 0px;
 
-}
 .logo1 h1{
 	text-align: center;
 	padding: 30px 0px;
+	/*line-height: 40px;*/
 	
 }
+.logo2{
+	width: 90%;
+	margin:0 auto;
+	 padding: 20px 0px;
+
+}
+.row{
+	margin:0 auto;
+}
+
 .logo-1{
-	width:30%;
-	margin-left: 30px;
+	/*width: 100%;*/
+	/*width:280px;*/
+	/*background-color: orange;*/
+	/*margin-top:30px;*/
 	height: auto;
 	border-radius: 10px;
     margin:0 auto;
@@ -135,65 +123,254 @@ header{
 	color: #2C82C8;
 	text-align: center;
 }
-.logo-2{
-	/*width:30%;*/
-	margin-left:60px;
 
-}
-.logo-2 h3{
-	background-color: #2C82C8;
-	margin-top:40px;
-	text-align: center;
-	color: white;
-	padding: 0 10px;
-}
-.button{
-	padding:20px 30px;
-	border: 1px solid #ced5dd;
-	/*margin-top: 40px;*/
-	/*line-height: 30px;*/
+.logo-1-1{
+	/*width: 100%;*/
+	/*width:280px;*/
+	/*background-color: orange;*/
+	/*margin-top:30px;*/
+	height: auto;
 	border-radius: 10px;
-
-}
-
-.logo-3{
-	width:30%;
-	/*margin-left: 30px;*/
-	margin-top:60px;
-	margin-left:60px;
-	/*line-height: 100px;*/
-
-}
-/*.logo-3-3{
-	width:100%;
-	margin-top: 30px;
-}*/
-
-/*.logo-1-1{
-	width:60%;
-	border-radius: 10px;
-
-	height: 200px;
-	padding: 40px 120px;
+    margin:0 auto;
+	/*height: 200px;*/
+	padding: 40px 0;
 
 	background-color:gray;
-}*/
-
-/*.logo-1-1 h2{
-	color: white;
-}*/
-/*.logo-2-2-2 h3{
-	/*background-color: #2C82C8;*/
-	/*margin-top:40px;
+}
+.logo-1-1 h2{
+	color:white;
 	text-align: center;
-	color: gray;
-	padding: 0 10px;
+}
+.logo-2{
+	/*width: 100%;*/
+	margin:0 auto;
+
+}
+
+/*.logo-2 div{
+	
+	margin:0 auto;
+}*/
+.logo-2 span{
+	/*background-color: #2C82C8;*/
+	margin-top:30px;
+	text-align: center;
+	display:block;
+	line-height: 30px;
+	font-size: 20px;
+	/*color:gray;*/
+	/*width: 100%;*/
+	margin-left:30px;
+}
+
+
+.logo-3{
+     margin:0 auto;
+}
+
+.logo-3 p{
+	text-align: center;
+}
+
+/*.logo-3 div{
+	 width: 100%;
 }*/
 
+.btn{
+	padding:15px 25px;
+    /*display:block;*/
+    margin:0 auto;
+	border: 1px solid #ced5dd;
+	/*margin-left: 40px;*/
+	/*line-height: 30px;*/
+	border-radius: 10px;
+	margin-top:30px;
 
-@media screen and  (max-width: 768px) {
+}
+.btn:hover{
+	color: white;
+	background-color: blue;
+}
+
+
+/*<!-- 码市开发大礼包 -->*/
+.parter-content{
+	width: 100%;
+	background-color:#F0F2F5;
+	padding: 80px 0 40px 0;
+	text-align: center;
+}
+
+.parter-content p{
+	line-height: 40px;
+}
+
+
+.parter-content1{
+	 margin:0 auto;
+	 width: 80%;
+}
+.parter-content-1{
+	position: relative;
+	/*width: 200px;*/
+	margin:0 auto;
+	margin-top: 20px;
+}
+
+.wjy{
+	margin:0 auto;
+	background-color: white;
+	width: 200px;
+	/*position: relative;*/
+	border-radius: 10px;
+
+}
+/*.hidden{
+	margin:0 auto;
+	background-color:gray;
+	width: 200px;
+	height: 300px;
+	border-radius: 10px;
+	position: absolute;
+	top:40px;
+	left:40px;
+	z-index: 99;
+
+}
+*/
+.parter-content-1-1{
+	padding: 30px 0px;
+	/*width: 120px;*/
+	margin: 0 auto;
+	border-bottom: 1px solid #ced5dd;
+}
+
+.parter-content-text{
+	padding: 30px 0;
+}
+.parter-content-text span{
+	display: block;
+}
+.parter-content-text span:first-child{
+	font-size: 30px;
+}
+
+
+.parter-content-bottom{
+	/*width: 900px;*/
+	width: 70%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	
+	margin:0 auto;
+}
+.parter-content-bottom p{
+	padding: 10px 0px;
+	font-size: 14px;
+	border-top: 1px solid #ced5dd;
+	
+}
+
+ /*<!-- 媒体报道 -->*/
+.report{
+	width: 100%;
+	background-color: white;
+	padding: 20px 0 50px 0;
+}
+
+.report h1{
+	padding: 40px 0;
+	text-align: center;
+	color: black;
+}
+
+
+.mt{
+	 width: 90%;
+	 margin:0 auto;
+
+}
+
+.mtm{
+	margin:0 auto;
+	width: 186px;
+	margin-left:50px;
+	/*margin-right: 30px;*/
+	padding: 20px 10px;
+	display: table-cell;
+	/*主要是这个属性*/
+     vertical-align: middle;
+    text-align: center;
+}
+
+.mtm img{
+	/*padding-left: 60px;*/
+	width:100%;
+	/*margin-top: */
+	margin:0 auto;
+	/*height: auto;
+	vertical-align: middle;*/
+}
+
+
+.mttp{
+	width: 90%;
+	padding-left: 20px;
+	 margin:0 auto;
+
+}
+
+.mttp-1{
+	width: 40%;
+	/*height: 100px;*/
+	padding: 20px 10px;
+	margin-left:20px;
+	display: table-cell;
+	/*主要是这个属性*/
+     vertical-align: middle;
+    text-align: center;
+	/*background-color: red;*/
+}
+
+.mttp-1 img{
+	width: 138px;
+	height: auto;
+}
+.mttp-2{
+	width: 189px;
+	margin-left:40px;
+
+	padding: 20px 0;
+}
+
+.mttp-2 img{
+	width: 100%;
+	height: auto;
+}
+
+.mttp-3{
+	width: 189px;
+	margin-left:60px;
+	padding: 20px 0;
+}
+
+.mttp-3 img{
+	width: 100%;
+	height: auto;
+}
+
+
+
+footer{
+	width: 100%;
+	background-color: gray;
+	padding: 50px 0;
+}
+
+@media screen and  (max-width: 678px) {
 	.col-1{
 		border-bottom: 1px solid gray;
 		border-right: none;
 	}
 }
+

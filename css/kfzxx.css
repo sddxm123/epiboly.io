@@ -1,0 +1,52 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div
+{
+	margin:0;
+	padding:0;
+	border:0;
+} 
+body{
+	background:#EFF1F5;
+	color:#333;
+	font-size:12px; 
+	width: 100%;
+	/*margin-top:5px;*/
+	font-family:"SimSun","宋体","Arial Narrow";} 
+ul,ol{
+	list-style-type:none;
+} 
+.container{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+select,input,img,select{
+	vertical-align:middle;
+} 
+a{
+	text-decoration:none;
+	color: gray;
+}
+.w-kf{
+	width: 100%;
+	background-color: #F8FAFC;
+	height: 60px;
+}
+
+.w-jdgh{
+	width:80%;
+	/*background-color: white;*/
+	margin:0 auto;
+	height: 200px;
+}
+.w-left{
+	width: 60%;
+	/*margin-left: 10px;*/
+	background-color: white;
+
+}
+
+.w-right{
+	width: 40%;
+	background-color: white;
+
+}
