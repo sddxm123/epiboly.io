@@ -137,11 +137,15 @@
   z-index: 999;
 }
 .z-top2 .head2 {
+<<<<<<< HEAD
 
+=======
+>>>>>>> zcf
   background-color: #fff;
 }
 .foot {
   padding-top: 60px;
+<<<<<<< HEAD
   
   padding-bottom: 40px;
   /*padding-left: 100px;*/
@@ -149,6 +153,9 @@
  padding-left: 20px;
  padding-right: 20px;
   margin:0 auto;
+=======
+  padding-bottom: 40px;
+>>>>>>> zcf
   background: #273444;
   color: #fff;
 }
@@ -158,14 +165,20 @@
 .foot .foot-content ul li {
   color: #8796A8;
   font-size: 14px;
+<<<<<<< HEAD
   width: 80%;
+=======
+>>>>>>> zcf
   padding: 4px 0;
 }
 .foot .foot-content ul li:nth-child(1) {
   color: #fff;
   font-weight: 700;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> zcf
 .foot .foot-copy {
   text-align: center;
   display: none;
@@ -176,7 +189,11 @@
 @media screen and (max-width: 768px) {
   .foot {
     padding-top: 0;
+<<<<<<< HEAD
 
+=======
+    padding-bottom: 0px;
+>>>>>>> zcf
   }
   .foot .foot-content {
     display: none;
@@ -184,14 +201,25 @@
   .foot .foot-copy {
     display: block;
     position: relative;
+<<<<<<< HEAD
   }
   .foot .foot-copy span:nth-child(1) {
     position: absolute;
     left: 0;
+=======
+    text-align: left;
+  }
+  .foot .foot-copy span:nth-child(1) {
+    font-size: 22px;
+>>>>>>> zcf
   }
   .foot .foot-copy span:nth-child(2) {
     position: absolute;
     right: 0;
+<<<<<<< HEAD
+=======
+    font-size: 20px;
+>>>>>>> zcf
   }
   .head .navbar-collapse {
     background: #2d3237;
