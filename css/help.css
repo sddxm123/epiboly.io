@@ -1,0 +1,158 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;} 
+body{background:#fff;color:#333;font-size:12px; margin-top:5px;font-family:"SimSun","宋体","Arial Narrow";} 
+ul,ol{list-style-type:none;} 
+select,input,img,select{vertical-align:middle;} 
+a{text-decoration:none;} 
+a:hover{text-decoration: none;}
+.clear{clear: both;}
+
+
+body{
+	background: #eee;
+}
+.b-title{
+	height: 329px;
+	background: url(../img/banner.jpg) center/cover no-repeat;
+}
+.b-title p{
+	text-align: center;
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 700;
+	padding-top: 12rem;
+}
+.b-main{
+	margin-bottom: 80px;
+}
+
+
+.help-nav{
+	margin: 2.2rem 0;
+	padding-left: 1rem;
+}
+.b-menu{
+	background: #fff;
+	border-radius: .5rem;
+}
+.b-menu{
+	padding: .5rem 0;
+}
+.b-menu .search{
+	width: 100%;
+	position: relative;
+	padding: 1.4rem 1rem 0;
+}
+.b-menu .search input{
+	width: 100%;
+	height: 2.6rem;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	text-indent: 1rem;
+	margin: 0 auto;
+	outline: none;
+}
+.b-menu .search i{
+	position: absolute;
+	right: 2rem;
+	top: 2.1rem;
+}
+.b-menu-list{
+	padding: 1rem;
+}
+.b-menu-list h2{
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: .2rem;
+}
+.b-menu-list ul{
+	padding-left: 1.2rem;
+	overflow: hidden;
+}
+.b-menu-list li{
+	padding: 0;
+	color: #888;
+	margin-top: 1rem;
+}
+.b-menu-list a{
+	color: #888;
+}
+.b-menu-list .b-active{
+	color: #337ab7;
+}
+.b-section{
+	margin-top: 1.7rem;
+}
+
+.b-fff{
+	background: #fff;
+	border-radius: .5rem;
+}
+.b-problem{
+	border-radius: .5rem;
+	padding: 4rem;
+}
+.b-problem h2{
+	padding-bottom: 1.5rem;
+	font-weight: 700;
+	border-bottom: 1px solid #eee;
+}
+.b-problem .b-an{
+	overflow: hidden;
+	padding: 2.3rem 0 0 1.3rem;
+	list-style-type: disc;
+}
+.b-problem .b-an li{
+	color: #337ab7;
+	padding-left: 0;
+	line-height: 3rem;
+	font-size: 1.3rem;
+}
+
+.b-problem .steps h3{
+	font-weight: 700;
+}
+.b-problem .right-list{
+	padding: 2.3rem 1.3rem;
+}
+.b-problem .right-list li{
+	overflow: hidden;
+	line-height: 2rem;
+	margin-top: 60px;
+}
+.b-problem .right-list li:nth-child(1){
+	margin-top: 0;
+}
+.b-problem .right-list li span{
+	display: inline-block;
+	background: url(../img/dbfe9267-b9b9-46bb-8d85-8c18b48935c6.png) no-repeat;
+	background-size: 112px 112px;
+	background-position: center;
+	width: 112px;
+	height: 112px;
+}
+.b-problem .right-list p{
+	margin-top: 1rem;
+}
+
+.b-problem .right-list .steps{
+	padding: 0;
+}
+@media screen and (max-width: 768px){
+	.b-problem .right-list li span{
+		width: 100%;
+		background-position: center;
+	}
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	.b-fff{
+		margin-top: 2rem;
+		background: none;
+	}
+	.b-problem{
+		background: #fff;
+	}
+}
