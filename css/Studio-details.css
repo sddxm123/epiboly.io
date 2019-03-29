@@ -55,6 +55,7 @@ margin-top: 60px;
    color: #ff8706;
    padding-right: 10px;
    float: right;
+   overflow: hidden;
 }
 /* @media (min-width:768px).col-sm-6 er{
 	width: 50%;
@@ -64,14 +65,26 @@ margin-top: 60px;
 	margin-top: 42px;
 	font-size: 16px;
 	color: #333;
+	float: left;
+	overflow: hidden;
+
 }
+.orders{
+	width: 100%;
+}
+
 #btn{
-	width: 200px;
+	/* width: 200px; */
+	width: 50%;
+	padding: 0 20px;
 	height: 50px;
 	float: right;
 	font-size: 18px;
 	background-color: #2EB135;
 	border-color: #2EB135;
+	float: right;
+	overflow: hidden;
+	margin-top: 25px;
 
 }
 .det{
@@ -84,7 +97,7 @@ margin-top: 60px;
 	margin-left:-15px; 
 }
 .left{
-	width: 900px;
+	/* width: 900px; */
 	float: left;
 	overflow: hidden;
 	boeder-bottom:1px solid #f8f9fb;
@@ -96,12 +109,14 @@ margin-top: 60px;
 	margin-bottom: 0;
 	list-style: none;
 	margin-top: 0;
+	width: 100%;
 }
 .navigation li{
 	line-height: 50px;
 	text-align: center;
 	font-size: 18px;
-	width: 230px;
+	/* width: 230px; */
+	width: 50%;
 }
 .navigation li a:hover{
 	border: none;
