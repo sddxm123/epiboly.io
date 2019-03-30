@@ -138,13 +138,17 @@
 }
 .z-top2 .head2 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> zcf
+=======
+>>>>>>> bly
   background-color: #fff;
 }
 .foot {
   padding-top: 60px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   
   padding-bottom: 40px;
@@ -156,6 +160,9 @@
 =======
   padding-bottom: 40px;
 >>>>>>> zcf
+=======
+  padding-bottom: 40px;
+>>>>>>> bly
   background: #273444;
   color: #fff;
 }
@@ -166,9 +173,12 @@
   color: #8796A8;
   font-size: 14px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 80%;
 =======
 >>>>>>> zcf
+=======
+>>>>>>> bly
   padding: 4px 0;
 }
 .foot .foot-content ul li:nth-child(1) {
@@ -176,9 +186,12 @@
   font-weight: 700;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> zcf
+=======
+>>>>>>> bly
 .foot .foot-copy {
   text-align: center;
   display: none;
@@ -190,10 +203,13 @@
   .foot {
     padding-top: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     padding-bottom: 0px;
 >>>>>>> zcf
+=======
+>>>>>>> bly
   }
   .foot .foot-content {
     display: none;
@@ -202,24 +218,33 @@
     display: block;
     position: relative;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> bly
   }
   .foot .foot-copy span:nth-child(1) {
     position: absolute;
     left: 0;
+<<<<<<< HEAD
 =======
     text-align: left;
   }
   .foot .foot-copy span:nth-child(1) {
     font-size: 22px;
 >>>>>>> zcf
+=======
+>>>>>>> bly
   }
   .foot .foot-copy span:nth-child(2) {
     position: absolute;
     right: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     font-size: 20px;
 >>>>>>> zcf
+=======
+>>>>>>> bly
   }
   .head .navbar-collapse {
     background: #2d3237;
