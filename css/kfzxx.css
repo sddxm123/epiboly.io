@@ -9,16 +9,70 @@ body{
 	color:#333;
 	font-size:12px; 
 	width: 100%;
+	height:auto;
 	/*margin-top:5px;*/
 	font-family:"SimSun","宋体","Arial Narrow";} 
 ul,ol{
 	list-style-type:none;
 } 
+
+.w-kf{
+	margin:10px auto;
+	width: 100%;
+	background-color: #F9FBFD;
+	/*height: 70px;*/
+}
+.ww-fb{
+	width: 90%;
+	margin:0 auto;
+	padding: 0 10px;
+}
+.w-kf1{
+	padding-top: 10px;
+	margin:0 auto;
+	padding-bottom: 10px;
+	
+}
+.w-kf1 span{
+	display: inline-block;
+	line-height: 30px;
+}
+.w-kf1 span{
+	display:inline-block;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.w-span{
+	/*display:block;*/
+	text-align: right;
+	background-color: blue;
+	border-radius: 5px;
+	/*width: 200px;*/
+	outline: none;
+	padding: 10px 5px;
+	color: white;
+	border:0;
+	float: right;
+	font-size: 12px;
+	/*vertical-align:right;*/
+}
+.w-right{
+	width: 80%;
+
+}
+.w-left{
+	width: 20%;
+	/*float: right;*/
+}
 .container{
 	padding: 0;
 	margin: 0;
 	width: 100%;
 }
+a:hover{text-decoration: none;}
+.clear{clear: both;}
+
 select,input,img,select{
 	vertical-align:middle;
 } 
@@ -26,27 +80,209 @@ a{
 	text-decoration:none;
 	color: gray;
 }
-.w-kf{
-	width: 100%;
-	background-color: #F8FAFC;
-	height: 60px;
-}
 
-.w-jdgh{
-	width:80%;
-	/*background-color: white;*/
+
+
+main{
+	margin: 60px auto;
+}
+.b-publish{
+	padding: 0;
 	margin:0 auto;
-	height: 200px;
-}
-.w-left{
-	width: 60%;
-	/*margin-left: 10px;*/
-	background-color: white;
-
+	width:90%;
+	margin-bottom: 40px;
 }
 
-.w-right{
-	width: 40%;
-	background-color: white;
 
+.b-right{
+	padding: 2rem 0rem  2.5rem 0;
+	background: #fff;
+	border-radius: .5rem;
+	
+}
+.ww-top{
+	padding-bottom:20px;
+	width:100%;
+	margin:0 auto;
+	border-bottom: 1px solid #9999;
+}
+.w-top{
+	padding: 0 20px;
+	/*width: 60%;*/
+}
+
+.w-top1{
+	padding: 0 20px;
+	/*width:40%;*/
+}
+
+.w-top1>button{
+    outline: none;border:none;
+    background-color:#4E8FD7;color: white;
+    padding: 5px 5px;
+    border-radius:5px;
+    float: right;
+}
+
+.w-write1{
+	width: 100%;
+	margin:0 auto;
+}
+.w-write{
+	padding: 20px 0px;
+	width: 100%;
+	border-bottom: 1px solid #9999;
+	margin:0 auto;
+}
+.w-write-1{
+	width: 100%;
+	margin:0 auto;
+}
+.w-oospan{
+	/*width: 150px;*/
+	/*font-size: 24px;*/
+	text-align: left;
+}
+
+.w-p{
+	text-align: right;
+	line-height: 30px;
+}
+
+.wj-pp{
+	display: inline-block;
+}
+.w-message{
+	/*width: 99%;*/
+	padding: 20px 0;
+	margin:10px auto;
+	border-top: 1px solid #9999;
+}
+
+.w-img img{
+	/*width: 70%;*/
+	width: 40px;
+	height: auto;
+}
+.w-sj p{
+	/*width: 100%;*/
+	font-size: 14px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.w-kff{
+	padding-top: 30px;
+	width: 80%;
+	margin:0 auto;
+}
+
+.w-pp{
+	padding: 10px 0;
+	text-align: center;
+	background-color:#FFFBF1; 
+}
+
+
+.w-shejitu{
+
+	/*padding-top: 30px;*/
+	width: 80%;
+	margin:20px auto;
+	border:1px solid #9999;
+}
+.wsjj-1{
+	line-height: 40px;
+	/*padding: 0 20px;*/
+	/*width: 50%;*/
+	background-color: #F9FBFD;
+}
+.wsjj-1 span{
+	display: inline-block;
+	padding:0 5px;
+
+}
+.wsjj-11{
+	/*width: 50%;*/
+	background-color: #F9FBFD;
+	line-height:40px;
+	padding: 0 5px;
+	text-align: right;
+	letter-spacing: 2px;
+}
+.w-spano{
+	display: inline-block;
+	padding:0 5px;
+
+	text-align: right;
+}
+
+.w-contets{
+	width: 100%;
+    margin:0 auto;
+	padding: 0px 6px;
+}
+.ww-p{
+	line-height: 30px;
+	padding-top: 15px;
+}
+.ww-p1{
+	line-height: 30px;
+	/*padding-top: 15px;*/
+}
+.ww-p1-1{
+	line-height: 30px;
+	color: #999;
+	/*padding-top: 15px;*/
+}
+.w-block{
+	display: inline-block;
+	background-color: #EFF1F5;
+	transform:scale(0.8);
+	color: red;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+.w-dinji{
+	width: 100%;
+    margin:0 auto;
+    border-top:1px solid #9999;
+	padding: 0px 6px;
+}
+.ww-botton{
+	text-align: right;
+	padding: 20px 0;
+}
+
+.ww-botton>button{
+	outline: none;background-color: white;
+	border:1px solid #999;
+}
+.w-button{
+	border: 1px solid blue;
+	color: blue;
+}
+.notice{
+	padding: 2.5rem;
+	border-radius: .5rem;
+	background: #fff;
+}
+.notice h4{
+	font-weight: 700;
+	font-size:2.2rem; 
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid #ddd;
+}
+.notice .content{
+	padding-top: 1.2rem;
+}
+.notice .content p{
+	padding-top: 1.2rem;
+
+}
+
+@media screen and  (max-width: 678px) {
+	.w-kf1 img{
+		display: none;
+	}
 }
