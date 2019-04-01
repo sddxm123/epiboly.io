@@ -29,20 +29,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand logo" href="#">麻事</a>
+                    <a class="navbar-brand logo" href="index.html">麻事</a>
                 </div>
                 <div class="collapse navbar-collapse" id="example-navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">项目</a></li>
-                        <li><a href="#">会员</a></li>
-                        <li><a href="#">开发者</a></li>
-                        <li><a href="#">帮助</a></li>
+                        <li><a href="main.html">项目</a></li>
+                        <li><a href="evaluate.html">估价</a></li>
+                        <li><a href="kfzym.html">开发者</a></li>
+                        <li><a href="help.html">帮助</a></li>
 
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="head-white">登录</a></li>
-                        <li><a href="#" class="head-white">注册</a></li>
+                        <li><a href="dljm.html" class="head-white">登录</a></li>
+                        <li><a href="xzsf.html" class="head-white">注册</a></li>
                         <li class="login-user">
                             <div class="user">
                                 <div class="portrait">
@@ -52,9 +52,9 @@
                             </div>
                             <ul class="user-menu">
                                 <li>hello,bly</li>
-                                <li><a href="javascript:;"><i class="iconfont icon-geren"></i>个人中心</a></li>
+                                <li><a href="personal.html"><i class="iconfont icon-geren"></i>个人中心</a></li>
                                 <li><a href="javascript:;"><i class="iconfont icon-dunpai"></i>我的开发保</a></li>
-                                <li><a href="javascript:;"><i class="iconfont icon-pen"></i>我发布的项目</a></li>
+                                <li><a href="fabuxm.html"><i class="iconfont icon-pen"></i>我发布的项目</a></li>
                                 <li><a href="javascript:;"><i class="iconfont icon-lanzi"></i>我的报价单</a></li>
                                 <li><a href="javascript:;"><i class="iconfont icon-tuichu"></i>退出登录</a></li>
                             </ul>
@@ -74,11 +74,11 @@
         <div class="user-wrapper">
             <div class="wrapper-left">
                 <p class="wrappertitle">基本信息</p>
-                <p class="wrapperclass color2d3238">账户信息</p>
-                <p class="wrapperclass color2d3238">码市认证</p>
+                <p class="wrapperclass color2d3238 w-active"><img src="img/wleft1.png" alt="">账户信息</p>
+                <p class="wrapperclass color2d3238"><img src="img/wleft2.png" alt="">码市认证</p>
                 <p class="wrappertitle">开发者信息</p>
-                <p class="wrapperclass color2d3238">技能展示</p>
-                <p class="wrapperclass color2d3238">码市测试</p>
+                <p class="wrapperclass color2d3238"><img src="img/wleft3.png" alt="">技能展示</p>
+                <p class="wrapperclass color2d3238"><img src="img/wleft4.png" alt="">码市测试</p>
             </div>
             <div class="wrapper-right">
                 <div>
@@ -97,17 +97,31 @@
                         <p class="information-title">账户信息</p>
                         <p class="anno">标有星号 (*) 的栏目为必填栏目, 并请验证邮箱和手机。</p>
                         <p class="anno">您的个人信息不会透露给任何第三方，请放心填写。</p>
-                        
+
                         <!-- 工作邮箱 -->
                         <div class="infoitem">
                             <div class="infoitem-head">
                                 <span>工作邮箱<sup>*</sup></span>
                                 <span class="verify">未验证</span>
                             </div>
-                            <div class="infoitem-content">
+                            <div class="infoitem-content infoleftmore">
                                 无
                             </div>
-                            <span class="alter alteremail">修改</span>
+                            <div class="infoitem-content infoalter">
+                                <div>
+                                    <input type="text" class="email-input">
+                                    <p>填写正确的邮箱</p>
+                                </div>
+                                <div>
+                                    <input type="text" class="email-input">
+                                    <p></p>
+                                </div>
+                                <div class="user-btn">
+                                    <span class="user-btn-sure user-btn-email">保存</span>
+                                    <span class="user-btn-cancel">取消</span>
+                                </div>
+                            </div>
+                            <span class="alter alteremail"><img src="img/alter.png" alt=""> 修改</span>
                         </div>
                         <!-- 工作手机 -->
                         <div class="infoitem">
@@ -115,94 +129,37 @@
                                 <span>工作手机<sup>*</sup></span>
                                 <span class="verify verifyed">已验证</span>
                             </div>
-                            <div class="infoitem-content">
+                            <div class="infoitem-content infoleftmore">
                                 17858274075
                             </div>
-                            <span class="alter alteremail">修改</span>
-                        </div>
-                    </div>
-                    <!-- 个人资料 -->
-                    <div class="information">
-                        <p class="information-title">个人资料</p>                        
-                        <!-- 团队名称 -->
-                        <div class="infoitem">
-                            <div class="infoitem-head">
-                                <span>团队名称<sup>*</sup></span>
+                            <div class="infoitem-content infoalter">
+                                <div>
+                                    <input type="text" class="phone-input">
+                                    <p>填写正确的手机号</p>
+                                </div>
+                                <div class="user-btn">
+                                    <span class="user-btn-sure user-btn-email">保存</span>
+                                    <span class="user-btn-cancel">取消</span>
+                                </div>
                             </div>
-                            <div class="infoitem-content">
-                                无
-                            </div>
-                            <span class="alter alteremail">修改</span>
-                        </div>
-                        <!-- 工作手机 -->
-                        <div class="infoitem">
-                            <div class="infoitem-head">
-                                <span>QQ</span>
-                            </div>
-                            <div class="infoitem-content">
-                                454621936
-                            </div>
-                        </div>
-                        <!-- 所在地 -->
-                        <div class="infoitem">
-                            <div class="infoitem-head">
-                                <span>所在地<sup>*</sup></span>
-                            </div>
-                            <div class="infoitem-content">
-                                浙江省 嘉兴市 海宁市
-                            </div>
+                            <span class="alter alterphone"><img src="img/alter.png" alt=""> 修改</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- 底部 -->
     <div class="foot">
-        <div class="foot-content container">
-            <div class="row">
-                <div class="col-sm-2 col-md-2">
-                    <ul>
-                        <li>新手指南</li>
-                        <li>注册登录</li>
-                        <li>广告位申请</li>
-                        <li>邮箱认证</li>
-                    </ul>
-                </div>
-                <div class="col-sm-2 col-md-2">
-                    <ul>
-                        <li>关于我们</li>
-                        <li>麻事介绍</li>
-                        <li>成功案例</li>
-                        <li>项目交易流程</li>
-                    </ul>
-                </div>
-                <div class="col-sm-2 col-md-2">
-                    <ul>
-                        <li>帮助</li>
-                        <li>注册登录问题</li>
-                        <li>如何发布项目需求</li>
-                        <li>更多>></li>
-                    </ul>
-                </div>
-                <div class="col-sm-2 col-md-2">
-                </div>
-                <div class="col-sm-2 col-md-2">
-                    <h4>联系我们</h4>
-                    <p>0578-88888888</p>
-                    <p>654789@qq.com</p>
-                </div>
-                <div class="col-sm-2 col-md-2">
-                    <img src="img/zerweima.png" alt="">
-                </div>
-            </div>
-        </div>
         <div class="foot-copy">
             <span class="logo">麻事</span> <span>Copyright &nbsp;2014-2018</span>　
         </div>
     </div>
     <script src="js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/z-user.js"></script>
+    <script src="js/u-personal.js"></script>
 </body>
 
 </html>

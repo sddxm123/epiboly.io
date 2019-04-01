@@ -8,7 +8,6 @@ body {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
-
     .user-content-title {
         padding: 10px 0 20px;
         font-size: 14px;
@@ -40,6 +39,19 @@ body {
     .wrapperclass {
         height: 45px;
         box-shadow: 0 -1px 0 0 #E6E6E6, 0 1px 0 0 #FFF inset, 0 2px 0 0 #E6E6E6, 1px 0 0 0 #E6E6E6, -1px 0 0 0 #E6E6E6;
+        cursor: pointer;
+        vertical-align: middle;
+        line-height: 30px;
+
+        img {
+            vertical-align: middle;
+            margin-right: 10px;
+            margin-top: -3px;
+        }
+    }
+
+    .w-active {
+        background-color: #fff;
     }
 
     // 右边
@@ -66,7 +78,8 @@ body {
             margin-bottom: 10px;
             border-radius: 4px;
             position: relative;
-            em{
+
+            em {
                 position: absolute;
                 right: 15px;
                 font-size: 16px;
@@ -124,24 +137,131 @@ body {
         margin-bottom: 12px;
         border-bottom: 1px solid #dde3eb;
     }
-    .anno{
+
+    .anno {
         color: #8796a8;
         margin-bottom: 6px;
     }
 }
-.infoitem{
+
+.infoitem {
     margin-top: 20px;
-    .infoitem-head{
+    // height: 45px;
+    position: relative;
+
+    >div {
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .infoitem-content {
+        height: auto;
+    }
+
+    .infoalter {
+        display: none;
+    }
+
+    .infoitem-head {
         position: relative;
         float: left;
         width: 128px;
+
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
     }
-    .verify{
+
+    .item--content {
+        margin-left: 140px;
+    }
+
+    .infoleftmore {
+        margin-left: 170px;
+    }
+
+    .verify {
         color: #e61e0b;
-        background: rgba(229,30,10,.1);
+        background: rgba(229, 30, 10, .1);
         font-size: 12px;
         padding: 6px;
         border-radius: 4px;
+    }
+
+    .alter {
+        display: block;
+        font-size: 12px;
+        color: #4289dc;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        cursor: pointer;
+    }
+}
+
+//修改
+.user-btn-sure,
+.user-btn-cancel {
+    display: inline-block;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.user-btn-sure {
+    border: 1px solid #4289dc;
+    background: #4289db;
+    color: #fff;
+
+    &:hover {
+        background: #3a79c2;
+    }
+}
+
+.user-btn-cancel {
+    border: 1px solid #dde3eb;
+    background: #fff;
+    color: #273444;
+
+    &:hover {
+        background: #eff2f7;
+    }
+}
+
+//修改的框
+.infoitem-content {
+    .user-btn {
+        line-height: normal;
+    }
+
+    >div {
+        margin-left: 160px;
+        padding: 5px 0;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        outline: none;
+        height: 40px;
+        border: 1px solid #cad3de;
+        border-radius: 4px;
+        padding: 6px 10px;
+        box-sizing: border-box;
+        color: #273444;
+    }
+
+    p {
+        line-height: normal;
+        color: #db5858;
+        margin-top: 5px;
+        font-size: 12px;
     }
 }
 
@@ -149,4 +269,16 @@ body {
 .color2d3238 {
     color: #2d3238;
     opacity: .5;
+}
+
+// 底部
+.foot {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .foot-copy {
+        text-align: center;
+        display: block;
+    }
 }

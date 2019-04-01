@@ -195,6 +195,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #8796A8;
 =======
 >>>>>>> bly
@@ -241,6 +242,16 @@
 >>>>>>> bly
 =======
 >>>>>>> wuquan
+=======
+  font-size: 14px;
+  padding: 4px 0;
+  color: #8796A8;
+}
+.foot .foot-content ul li a {
+  color: #8796A8;
+}
+.foot .foot-content ul li:nth-child(1) a,
+>>>>>>> zcf
 .foot .foot-content ul li:nth-child(1) {
   color: #fff;
   font-weight: 700;
