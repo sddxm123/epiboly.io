@@ -281,3 +281,14 @@ footer{
 .cases-price{
 	color: #ff8706;
 }
+
+.home-span2{
+	margin-left: 40px;
+}
+@media screen  and (max-width:728px){
+    .home-span2{
+		display: block;
+		text-align: left;
+		margin-left: 0px;
+	}
+}

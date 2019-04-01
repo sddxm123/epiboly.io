@@ -140,6 +140,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> zcf
@@ -147,10 +148,13 @@
 >>>>>>> bly
 =======
 >>>>>>> hjm
+=======
+>>>>>>> yx
   background-color: #fff;
 }
 .foot {
   padding-top: 60px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -170,6 +174,9 @@
 =======
   padding-bottom: 40px;
 >>>>>>> hjm
+=======
+  padding-bottom: 40px;
+>>>>>>> yx
   background: #273444;
   color: #fff;
 }
@@ -177,6 +184,7 @@
   font-size: 16px;
 }
 .foot .foot-content ul li {
+<<<<<<< HEAD
 <<<<<<< HEAD
   color: #8796A8;
   font-size: 14px;
@@ -190,6 +198,8 @@
   padding: 4px 0;
 }
 =======
+=======
+>>>>>>> yx
   font-size: 14px;
   padding: 4px 0;
   color: #8796A8;
@@ -198,11 +208,15 @@
   color: #8796A8;
 }
 .foot .foot-content ul li:nth-child(1) a,
+<<<<<<< HEAD
 >>>>>>> hjm
+=======
+>>>>>>> yx
 .foot .foot-content ul li:nth-child(1) {
   color: #fff;
   font-weight: 700;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,6 +227,8 @@
 >>>>>>> bly
 =======
 >>>>>>> hjm
+=======
+>>>>>>> yx
 .foot .foot-copy {
   text-align: center;
   display: none;
@@ -226,6 +242,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     padding-bottom: 0px;
@@ -235,6 +252,9 @@
 =======
     padding-bottom: 0px;
 >>>>>>> hjm
+=======
+    padding-bottom: 0px;
+>>>>>>> yx
   }
   .foot .foot-content {
     display: none;
@@ -242,6 +262,7 @@
   .foot .foot-copy {
     display: block;
     position: relative;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -255,16 +276,21 @@
 =======
 =======
 >>>>>>> hjm
+=======
+>>>>>>> yx
     text-align: left;
   }
   .foot .foot-copy span:nth-child(1) {
     font-size: 22px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> zcf
 =======
 >>>>>>> bly
 =======
 >>>>>>> hjm
+=======
+>>>>>>> yx
   }
   .foot .foot-copy span:nth-child(2) {
     position: absolute;
@@ -272,6 +298,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     font-size: 20px;
 >>>>>>> zcf
@@ -280,6 +307,9 @@
 =======
     font-size: 20px;
 >>>>>>> hjm
+=======
+    font-size: 20px;
+>>>>>>> yx
   }
   .head .navbar-collapse {
     background: #2d3237;
