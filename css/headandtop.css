@@ -186,7 +186,10 @@
 .foot .foot-content ul li {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #8796A8;
+=======
+>>>>>>> bly
   font-size: 14px;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -203,6 +206,7 @@
   font-size: 14px;
   padding: 4px 0;
   color: #8796A8;
+<<<<<<< HEAD
 }
 .foot .foot-content ul li a {
   color: #8796A8;
@@ -212,6 +216,13 @@
 >>>>>>> hjm
 =======
 >>>>>>> yx
+=======
+}
+.foot .foot-content ul li a {
+  color: #8796A8;
+}
+.foot .foot-content ul li:nth-child(1) a,
+>>>>>>> bly
 .foot .foot-content ul li:nth-child(1) {
   color: #fff;
   font-weight: 700;
@@ -243,6 +254,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     padding-bottom: 0px;
@@ -255,6 +267,9 @@
 =======
     padding-bottom: 0px;
 >>>>>>> yx
+=======
+    padding-bottom: 0px;
+>>>>>>> bly
   }
   .foot .foot-content {
     display: none;
@@ -262,6 +277,7 @@
   .foot .foot-copy {
     display: block;
     position: relative;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -291,10 +307,17 @@
 >>>>>>> hjm
 =======
 >>>>>>> yx
+=======
+    text-align: left;
+  }
+  .foot .foot-copy span:nth-child(1) {
+    font-size: 22px;
+>>>>>>> bly
   }
   .foot .foot-copy span:nth-child(2) {
     position: absolute;
     right: 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -310,6 +333,9 @@
 =======
     font-size: 20px;
 >>>>>>> yx
+=======
+    font-size: 20px;
+>>>>>>> bly
   }
   .head .navbar-collapse {
     background: #2d3237;
