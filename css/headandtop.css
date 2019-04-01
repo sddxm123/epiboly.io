@@ -141,6 +141,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> zcf
@@ -150,10 +151,13 @@
 >>>>>>> hjm
 =======
 >>>>>>> yx
+=======
+>>>>>>> wuquan
   background-color: #fff;
 }
 .foot {
   padding-top: 60px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -177,6 +181,9 @@
 =======
   padding-bottom: 40px;
 >>>>>>> yx
+=======
+  padding-bottom: 40px;
+>>>>>>> wuquan
   background: #273444;
   color: #fff;
 }
@@ -184,6 +191,7 @@
   font-size: 16px;
 }
 .foot .foot-content ul li {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -198,8 +206,13 @@
 >>>>>>> zcf
 =======
 >>>>>>> bly
+=======
+  font-size: 14px;
+>>>>>>> wuquan
   padding: 4px 0;
+  color: #8796A8;
 }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> yx
@@ -218,15 +231,21 @@
 >>>>>>> yx
 =======
 }
+=======
+>>>>>>> wuquan
 .foot .foot-content ul li a {
   color: #8796A8;
 }
 .foot .foot-content ul li:nth-child(1) a,
+<<<<<<< HEAD
 >>>>>>> bly
+=======
+>>>>>>> wuquan
 .foot .foot-content ul li:nth-child(1) {
   color: #fff;
   font-weight: 700;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -240,6 +259,8 @@
 >>>>>>> hjm
 =======
 >>>>>>> yx
+=======
+>>>>>>> wuquan
 .foot .foot-copy {
   text-align: center;
   display: none;
@@ -255,6 +276,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     padding-bottom: 0px;
@@ -270,6 +292,9 @@
 =======
     padding-bottom: 0px;
 >>>>>>> bly
+=======
+    padding-bottom: 0px;
+>>>>>>> wuquan
   }
   .foot .foot-content {
     display: none;
@@ -277,6 +302,7 @@
   .foot .foot-copy {
     display: block;
     position: relative;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -313,10 +339,17 @@
   .foot .foot-copy span:nth-child(1) {
     font-size: 22px;
 >>>>>>> bly
+=======
+    text-align: left;
+  }
+  .foot .foot-copy span:nth-child(1) {
+    font-size: 22px;
+>>>>>>> wuquan
   }
   .foot .foot-copy span:nth-child(2) {
     position: absolute;
     right: 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -336,6 +369,9 @@
 =======
     font-size: 20px;
 >>>>>>> bly
+=======
+    font-size: 20px;
+>>>>>>> wuquan
   }
   .head .navbar-collapse {
     background: #2d3237;
