@@ -149,10 +149,14 @@
   font-size: 16px;
 }
 .foot .foot-content ul li {
-  color: #8796A8;
   font-size: 14px;
   padding: 4px 0;
+  color: #8796A8;
 }
+.foot .foot-content ul li a {
+  color: #8796A8;
+}
+.foot .foot-content ul li:nth-child(1) a,
 .foot .foot-content ul li:nth-child(1) {
   color: #fff;
   font-weight: 700;
@@ -167,6 +171,7 @@
 @media screen and (max-width: 768px) {
   .foot {
     padding-top: 0;
+    padding-bottom: 0px;
   }
   .foot .foot-content {
     display: none;
@@ -174,14 +179,15 @@
   .foot .foot-copy {
     display: block;
     position: relative;
+    text-align: left;
   }
   .foot .foot-copy span:nth-child(1) {
-    position: absolute;
-    left: 0;
+    font-size: 22px;
   }
   .foot .foot-copy span:nth-child(2) {
     position: absolute;
     right: 0;
+    font-size: 20px;
   }
   .head .navbar-collapse {
     background: #2d3237;

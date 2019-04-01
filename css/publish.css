@@ -8,6 +8,7 @@ a:hover{text-decoration: none;}
 
 
 
+
 body{
 	background: #eee;
 }
@@ -21,22 +22,16 @@ header{
 	border-bottom: 1px solid #ddd;
 }
 main{
-	/*min-width: 1120px;*/
-	margin: 80px auto;
+	/*margin: 80px auto;*/
+	margin-bottom: 20px;
 }
-.container{
-	/*max-width: 1120px;*/
+.b-publish{
 	padding: 0;
 }
-.col-md-8{
+.b-right{
 	padding: 2.5rem 3rem;
 	background: #fff;
-	border-radius: 2rem;
-}
-.col-md-4{
-	/*padding: 2.5rem 3rem;*/
-	/*background: #fff;*/
-	/*border-radius: 2rem;*/
+	border-radius: .5rem;
 }
 .type img{
 	width: 42px;
@@ -44,8 +39,6 @@ main{
 }
 .type span{
 	display: block;
-	/*width: 95px;*/
-
 }
 .type label{
 	width: 95px;
@@ -61,7 +54,7 @@ main{
 .type label:hover span{
 	color: #0069c4;
 }
-h3{
+.type h3{
 	font-size: 2.2rem;
 	font-weight: 700;
 	margin-bottom: 1.5rem;
@@ -91,11 +84,7 @@ h3{
 	padding: .5rem 0 .5rem 1.5rem;
 }
 .pad .col-xs-4{
-	/*margin-left: .3em;*/
 	padding: .7rem;
-}
-.pad .col-xs-4 i{
-	/*margin-left: 4rem;*/
 }
 .pad+.row{
 	margin-top: 1rem;
@@ -176,7 +165,7 @@ h3{
 
 .notice{
 	padding: 2.5rem;
-	border-radius: 2rem;
+	border-radius: .5rem;
 	background: #fff;
 }
 .notice h4{
