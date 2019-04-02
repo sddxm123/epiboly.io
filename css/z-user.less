@@ -8,9 +8,14 @@ body {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
+
     .user-content-title {
-        padding: 10px 0 20px;
+        padding: 10px 15px 20px;
         font-size: 14px;
+    }
+
+    .user-wrapper {
+        padding: 0 15px;
     }
 
     // 左边
@@ -23,6 +28,10 @@ body {
         p {
             box-sizing: border-box;
             padding: 7px 0 7px 21px;
+            a{
+                text-decoration: none;
+
+            }
         }
 
     }
@@ -266,9 +275,11 @@ body {
 }
 
 
-.color2d3238 {
-    color: #2d3238;
-    opacity: .5;
+.color979FA8 {
+    color: #979FA8;
+    &:hover{
+        color: #979FA8;
+    }
 }
 
 // 底部
@@ -277,8 +288,57 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+
     .foot-copy {
         text-align: center;
         display: block;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .user-content {
+        .wrapper-left {
+            width: 100%;
+            float: inherit;
+        }
+
+        .wrapper-right {
+            margin-top: 20px;
+            padding: 15px;
+            margin-left: 0;
+        }
+    }
+
+
+
+    .infoitem {
+        .infoitem-head {
+            float: inherit;
+        }
+
+        .infoleftmore {
+            margin-left: 0px;
+        }
+    }
+    .infoitem-content > div {
+        margin-left: 0px;
+        padding: 5px 0;
+    }
+
+
+    .foot {
+        position: initial;
+    }
+
+    .foot .foot-copy span:nth-child(1),
+    .foot .foot-copy span:nth-child(2) {
+        display: block;
+        position: initial;
+    }
+
+    .foot .foot-copy span:nth-child(2) {
+        font-size: 16px;
+        color: #8796a8;
     }
 }
