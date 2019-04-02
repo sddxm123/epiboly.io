@@ -83,7 +83,7 @@
 
 
                             <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                                <ul class="nav navbar-nav">
+                                <ul class="nav navbar-nav listul">
                                      <li>
                                          <div>
                                                 <i class="fa fa-th-large" aria-hidden="true"></i>全部<p>All Cases</p>
@@ -329,7 +329,10 @@
             <span class="logo">麻事</span> <span>Copyright &nbsp;2014-2018</span>　
         </div>
     </div>
+     
 
+
+    <div class="active"></div>
 
 
     <script>
@@ -358,7 +361,38 @@
         })
         
            
+
+         var ul = document.getElementsByClassName("listul")[0];
+         var liArr = ul.getElementsByTagName("li");
+           var prev=liArr[0];
+
+           for(var i = 0; i<liArr.length;i++){
+             liArr[i].index = i;
+             liArr[i].onclick = function(){
+                 console.log(this.index)
+
+                 prev.style.background = "blue";
+                //  prev.style.color = "white";
+                for(a = 0; a<liArr.length; a++){
+                    liArr[a].style.color = "#414952";
+                    liArr[a].style.background = "#f0f2f5";
+                }
+                 liArr[this.index].style.color = "white";
+                 liArr[this.index].style.background = "#414952";
+                 prev=this;
+             }
+
+
+
+           }
+
+
+
+
+
+
     
     </script>
+
 </body>
 </html>
