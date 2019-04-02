@@ -264,7 +264,6 @@ a{text-decoration:none;}
     font-size: 15px;
     color: #000000;
     line-height: 40px;
-    
 }
 .tishi_yi img{
     vertical-align: -2px;
@@ -285,7 +284,6 @@ a{text-decoration:none;}
     margin: 0 auto;
 }
 .san_ybian{
-    /* width: 50%; */
     height: 100%;
     display: inline-block;
     text-align: right;
@@ -308,7 +306,6 @@ a{text-decoration:none;}
 .tishi_yi{
     font-size: 15px;
 }
-
 .tishi p{
     display: inline-block;
     color: #9a9a9a;
@@ -399,5 +396,8 @@ a{text-decoration:none;}
     }
     .san_btn{
         font-size: 12px;
+    }
+    .dage{
+        width: 95%;
     }
 }
