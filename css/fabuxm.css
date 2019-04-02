@@ -212,9 +212,12 @@ a{text-decoration:none;}
     float: left;
     font-size: 15px;
 }
+.dierge_er h3{
+  margin: 0;
+}
 .ybian{
-    width: 50%;
-    float: right;
+    /* width: 50%; */
+    /* float: right; */
     text-align: right;
 }
 .faxm,.btu{
@@ -247,6 +250,9 @@ a{text-decoration:none;}
     overflow: hidden;
     margin-bottom: 20px;
 }
+.dierge_er .dierge_san {
+  margin: 0;
+}
 .hezizj{
     border-bottom: 1px solid rgb(172, 82, 82);
 }
@@ -258,12 +264,16 @@ a{text-decoration:none;}
 }
 
 .hezizj_yb{
-    width: 50%;
+    /* width: 50%; */
+    padding-left: 0;
     float: right;
     text-align: right;
     font-size: 15px;
     color: #000000;
     line-height: 40px;
+}
+.dierge_er .hezizj_yb{
+    padding-left: 0;
 }
 .tishi_yi img{
     vertical-align: -2px;
@@ -312,7 +322,7 @@ a{text-decoration:none;}
     padding-right: 5px;
 }
 .tishi span{
-    padding-right: 5px;
+    padding-right: 2px;
 }
 .tishi_er{
     font-size: 15px;
