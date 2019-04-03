@@ -8,10 +8,9 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/publish.css">
     <link rel="stylesheet" type="text/css" href="css/headandtop.css">
+    <link rel="stylesheet" type="text/css" href="css/publish.css">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_1111494_tsn7icuu9z9.css">
-</script>    
 </head>
 <body>
 	<!-- 头部 -->
@@ -119,7 +118,7 @@
 						<div class="col-sm-9">
 							<div class="row pad">
 								<div class="col-xs-8"><input type="text" class="form-control" placeholder="个人项目金额<￥50,000" name=""></div>
-								<div class="col-xs-4">元<i class="fa fa-square-o"></i><i class="fa fa-check-square"></i>可议价</div>
+								<div class="col-xs-4">元<input type="checkbox" class="checkbox">可议价</div>
 								<div class="clear"></div>
 							</div>
 							<div class="row">
@@ -177,8 +176,8 @@
 						<label class="col-sm-3 form-lable">相关文档<small>（选填）</small></label>
 						<div class="col-sm-9">
 							<div class="form-input-top">
-								<div class="row col-sm-6">
-									<input type="button" class="form-control" value="上传文件" name="">
+								<div class="row col-sm-9">
+									<input type="file" accept="" class="upload" value="上传文件" name="">
 								</div>
 								<div class="clear"></div>
 								<div class="row">
@@ -216,17 +215,13 @@
 								</div>
 								<div class="col-sm-6">
 									<label>您的邮箱</label>
-									<input type="text" class="form-control" placeholder="邮箱" name="">
+									<input type="text" class="form-control email" placeholder="邮箱" name="">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<label>您的手机</label>
 									<input type="text" class="form-control" value="123456789" name="">
-								</div>
-								<div class="col-sm-6">
-									<label>验证码</label>
-									<input type="text" class="form-control" placeholder="验证码" name="">
 								</div>
 							</div>
 							
@@ -319,6 +314,8 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/publish.js"></script> 
+    
 
 </body>
 </html>
