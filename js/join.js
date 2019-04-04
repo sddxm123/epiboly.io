@@ -1,0 +1,14 @@
+$.ajax({
+	url:"join.json",
+	type:"GET",
+	dataType:"json",
+	success:function(result){
+		console.log(result);
+		$.each(result.join,function(i,n){
+			console.log(2);
+		})
+	},
+	error:function(){
+		console.log(1);
+	}
+})
