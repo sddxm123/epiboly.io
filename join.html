@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>发布项目</title>
+	<title>报名列表</title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1111494_tsn7icuu9z9.css">
     <link rel="stylesheet" type="text/css" href="css/join.css">
     <link rel="stylesheet" type="text/css" href="css/headandtop.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1111494_tsn7icuu9z9.css">
-</script>    
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
 	<!-- 头部 -->
@@ -34,8 +34,6 @@
                         <li><a href="evaluate.html">估价</a></li>
                         <li><a href="kfzym.html">开发者</a></li>
                         <li><a href="help.html">帮助</a></li>
-
-
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="dljm.html" class="head-white">登录</a></li>
@@ -83,57 +81,31 @@
                         <p class="col-sm-2 col-xs-6">所有开发者 >></p>
                     </div>
                     <div class="b-main">
-                        <div class="coder-list">
+                        <div class="coder-list" id="coder-list">
 
-                            <div class="row coder">
+                            
+                            <!-- <div class="row coder">
                                 <div class="list-l col-sm-8 col-xs-12">
                                     <div class="row">
                                         <div class="col-xs-2 b-img"><img src="img/b-kfz.png"></div>
                                         <div class="col-xs-10">
-                                            <p><b>coder001</b></p>
-                                            <p class="b-com">开发者团队 | 较少兼职时间 | 评分 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
-                                            <p>胜任理由：44444</p>
+                                            <p><b>`+joins[i].user+`</b></p>
+                                            <p class="b-com">开发者团队 | 较少兼职时间 | 评分 <i class="fa fa-star" style="color:red"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+                                            <p>胜任理由：`+joins[i].reason+`</p>
                                             <p>联系方式：<a href="#">查看</a></p>
-                                            <p>报名时间：1个月前</p>
+                                            <p>报名时间：`+joins[i].time+`</p>
                                             <p>申请资料：<a href="#">查看</a></p>
                                         </div>
                                     </div>
-                                    
                                 </div>
                                 <div class="list-r col-sm-4 col-xs-12">
                                     <form role="form">
                                         <button type="button" class="btn btn-sm btn-default">不合适</button>
                                         <button type="button" class="btn btn-sm btn-primary">确认合作</button>
-                                        <textarea class="form-control" rows="3"></textarea> 
+                                        <textarea class="form-control" placeholder="添加备注" rows="4"></textarea> 
                                     </form>
                                 </div>
-                            </div>
-
-
-
-                            <div class="row coder">
-                                <div class="list-l col-sm-8 col-xs-12">
-                                    <div class="row">
-                                        <div class="col-xs-2 b-img"><img src="img/b-kfz.png"></div>
-                                        <div class="col-xs-10">
-                                            <p><b>coder001</b></p>
-                                            <p class="b-com">开发者团队 | 较少兼职时间 | 评分 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
-                                            <p>胜任理由：44444</p>
-                                            <p>联系方式：<a href="#">查看</a></p>
-                                            <p>报名时间：1个月前</p>
-                                            <p>申请资料：<a href="#">查看</a></p>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="list-r col-sm-4 col-xs-12">
-                                    <form role="form">
-                                        <button type="button" class="btn btn-sm btn-default">不合适</button>
-                                        <button type="button" class="btn btn-sm btn-primary">确认合作</button>
-                                        <textarea class="form-control" rows="3"></textarea> 
-                                    </form>
-                                </div>
-                            </div>
+                            </div> -->
 
 
 
@@ -164,6 +136,36 @@
 		</div>
 	</main>
 	
+
+
+    <!-- 申请资料 -->
+    <div class="modal">
+        <div class="modal-left">
+            <h2>申请资料</h2>
+            <p>胜任理由 22223</p>
+            <div class="modal-main">
+                <h3>项目经验</h3>
+                <b>项目名称</b>
+                <p>个人博客</p>
+                <b>项目周期</b>
+                <p>2019.04.04-2019.04.08</p>
+                <b>项目描述</b>
+                <p>个人的博客搭建1详细说明本项目的基本原理及相关技术内容，描述项目的技术或工艺路线、产品结构、基本算法原理等(1000字以内)图示管理 2论述项目创新点，包括技术创新、产品结构创新、产品工艺创新、产品性能及使用效果的显著变化等(1000字以内) 3详细描述项目的技术来源、合作单位和项目知识产权的归属情况(1000字以内) 4简述本项目国内外发展现状、存在的主要问题(1000字以内) 5项目成熟性和可靠性论述(1000字以内)项目产品市场调查与竞争</p>
+                <b>项目行业</b>
+                <p>社交</p>
+                <b>我的职责</b>
+                <p>1详细说明本项目的基本原理及相关技术内容，描述项目的技术或工艺路线、产品结构、基本算法原理等(1000字以内)图示管理</p>
+            </div>
+            <b>展示链接</b>
+            <p><a href="#">www.baidu.com</a></p>
+        </div>
+        <div class="modal-right">
+            <div><img src="img/b-kfz.png"></div>
+        </div>
+    </div>
+
+
+
 
 
     <!-- 尾部 -->
@@ -212,8 +214,11 @@
     </div>
 
 
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
+    <!-- <script type="text/javascript" src="js/visibleAnimate.js"></script> -->
+    <script type="text/javascript" src="js/join.js"></script>
+    
 </body>
 </html>
