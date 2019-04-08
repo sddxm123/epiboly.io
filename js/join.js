@@ -1,5 +1,5 @@
 // $.ajax({
-// 	url:"join.json",
+// 	url:"json/join.json",
 // 	type:"GET",
 // 	dataType:"json",
 // 	success:function(result){
@@ -18,23 +18,55 @@
 
 
 
-var join = [{"user":"conder001","reason":"4444","time":"1个月前","date":"555"},
-			{"user":"conder002","reason":"2222","time":"2个月前","date":"555"},
-			{"user":"conder003","reason":"4555","time":"3个月前","date":"555"},
-			{"user":"conder004","reason":"3853","time":"4个月前","date":"555"}];
+var join = [{"user":"guyg","reason":"花的合法化合付话费话一的哈诶发官方也让","time":"1个月前","date":"555"},
+			{"user":"gioiij","reason":"他人一条鱼2护肤日疯人院法人爱过阿凡达胡瑞","time":"2个月前","date":"555"},
+			{"user":"aewae","reason":"无IQ海棠湾v胡歌有如果红人馆四儿我食人鱼放空管","time":"3个月前","date":"555"},
+			{"user":"tuytf","reason":"虽然投入是个如果您还会狗肉火锅㞥个UR好贵牛肉","time":"4个月前","date":"555"},
+			{"user":"ybvn","reason":"rgshi阿胡覅带回家打印机教育局生日送你改吧想发给","time":"4个月前","date":"555"}];
 
-// var art = JSON.stringify(join);
-// console.log(art);
-// localStorage.join=art;
+var art = JSON.stringify(join);
+console.log(art);
+localStorage.join=art;
+
 var joins=JSON.parse(localStorage.join);
-console.log(joins);
+
+// for(i=0;i<joins.length;i++){
+// 	// $(".coder-list")
+// 	var coderlist=document.getElementById('coder-list');
+// 	var odiv=document.createElement('div');
+// 	// odiv.className='row coder';
+// 	odiv.innerHTML=` <div class="list-l col-sm-8 col-xs-12">
+// 	                    <div class="row">
+// 	                        <div class="col-xs-2 b-img"><img src="img/b-kfz.png"></div>
+// 	                        <div class="col-xs-10">
+// 	                            <p><b>`+joins[i].user+`</b></p>
+// 	                            <p class="b-com">开发者团队 | 较少兼职时间 | 评分 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
+// 	                            <p>胜任理由：`+joins[i].reason+`</p>
+// 	                            <p>联系方式：<a href="#">查看</a></p>
+// 	                            <p>报名时间：`+joins[i].time+`</p>
+// 	                            <p>申请资料：<a href="#">查看</a></p>
+// 	                        </div>
+// 	                    </div>
+// 	                </div>
+// 	                <div class="list-r col-sm-4 col-xs-12">
+// 	                    <form role="form">
+// 	                        <button type="button" class="btn btn-sm btn-default">不合适</button>
+// 	                        <button type="button" class="btn btn-sm btn-primary">确认合作</button>
+// 	                        <textarea class="form-control" placeholder="添加备注" rows="3"></textarea> 
+// 	                    </form>
+// 	                </div>`;
+
+// 	coderlist.appendChild(odiv);
+// }
+
+
+
+
+
 
 for(i=0;i<joins.length;i++){
-	// $(".coder-list")
-	var coderlist=document.getElementById('coder-list');
-	var odiv=document.createElement('div');
-	odiv.className='row coder';
-	odiv.innerHTML=` <div class="list-l col-sm-8 col-xs-12">
+	var odiv=$(`<div class="row coder">
+					<div class="list-l col-sm-8 col-xs-12">
 	                    <div class="row">
 	                        <div class="col-xs-2 b-img"><img src="img/b-kfz.png"></div>
 	                        <div class="col-xs-10">
@@ -46,19 +78,25 @@ for(i=0;i<joins.length;i++){
 	                            <p>申请资料：<a href="#">查看</a></p>
 	                        </div>
 	                    </div>
-	                    
 	                </div>
 	                <div class="list-r col-sm-4 col-xs-12">
 	                    <form role="form">
 	                        <button type="button" class="btn btn-sm btn-default">不合适</button>
 	                        <button type="button" class="btn btn-sm btn-primary">确认合作</button>
-	                        <textarea class="form-control" placeholder="添加备注" rows="3"></textarea> 
+	                        <textarea class="form-control" placeholder="添加备注" rows="4"></textarea> 
 	                    </form>
-	                </div>`;
+	                </div>
+				</div>`);
 	console.log(odiv);
 
-	coderlist.appendChild(odiv);
+	$(".coder-list").append(odiv);
 }
+
+
+
+
+
+
 
 
 

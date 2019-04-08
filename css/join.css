@@ -66,19 +66,23 @@ main{
 }
 .coder .list-l{
 	border-right: 1px solid #ddd;
+	line-height: 2.1rem;
 }
 .coder .list-l b{
 	font-size: 16px;
 }
 .coder .list-l .b-com{
 	color: #777;
-	margin: 4px 0;
+	margin: 5px 0 8px;
 }
 .coder .list-l .b-com i{
 	color: #FFF078;
 }
 .coder .list-l .b-img img{
 	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
 }
 
 

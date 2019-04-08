@@ -28,6 +28,26 @@ $(document).ready(function(){
 	})
 	
 	
+	// 本地储存
+	$('#pbtn').click(function(){
+		var projectName = $('#projectName').val();
+		var projectClass = $('#projectClass').val();
+		var projectPrice = $('#projectPrice').val();
+		var bargain;
+		if ($('#bargain').checked == true) {
+			bargain = 1;
+		}else{
+			bargain = 0;
+		}
+		
+		// console.log(localStorage)
+
+	})
+	
+
+
+
+
 
 });
 
