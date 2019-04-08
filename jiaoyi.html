@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>项目</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="css/jiaoyi.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+    <div class="wrap-head">
+        <span class="head-span1">码市</span> 
+        <span class="head-span2">开发宝</span>
+    </div>
+
+    <div class="body">
+    <h3>交易总金额 1,000.00元</h3>
+    <p class="body-p1">交易详情</p>
+     <hr>
+     <p class="p1">交易号 <span class="body-span1">10000058571720190408135306934616</span></p>
+     <p class="p1">交易名称<span class="body-span1">项目 「 18241 」 的阶段 「 P1 」 的款项</span></p>
+     <p class="p1">交易金额<span class="body-span1">1000.00元</span></p>
+     <hr>
+
+
+
+     <div class="check-button">
+         <div class="check-leftone">选择付款方式</div>
+
+         <div class="check-two">
+             <div class="num or"><i class="fa fa-circle" aria-hidden="true" style="color:#edf1f5;"></i></div>
+             <input type="radio" class="ra">
+             <img src="img/8.png" alt="">
+         </div>
+
+         <div class="check-two">
+            <div class="num or1"><i class="fa fa-circle" aria-hidden="true" style="color:#edf1f5;"></i></div>
+            <input type="radio" class="ra">
+            <img src="img/9.png" alt="">
+        </div>
+
+        <div class="check-two">
+            <div class="num or2"><i class="fa fa-circle" aria-hidden="true" style="color:#edf1f5;"></i></div>
+            <input type="radio" class="ra">
+            <img src="img/10.png" alt="">
+        </div>
+
+        <div class="check-two">
+            <div class="num or3"><i class="fa fa-circle" aria-hidden="true" style="color:#edf1f5;"></i></div>
+            <input type="radio" class="ra">
+            <img src="img/11.png" alt="">
+        </div>
+     </div>
+
+     <hr>
+
+
+     <button class="btn">确认付款</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <span class="footer-left">码市</span>
+        <span class="footer-right">Copyright © 2014-2018</span>
+    </div>
+
+       
+
+
+  <div class="mc">
+     <p class="p-first">扫一扫付款(元) <i class="fa fa-arrow-right" style="font-size:24px"></i></p> 
+     <p class="p-second">1000.00</p>
+       <img src="img/1554711925.png">
+       <p>打开手机支付宝</p>
+       <p>扫一扫继续付款</p>
+  </div>
+
+
+
+
+
+    <script>
+      $(function(){
+
+        // var check = $(".check-two div")
+
+
+
+
+
+
+        $(".num").click(function(){
+            $(".check-two div").css("background","#edf1f5")
+            $(".ra").css("display","none")
+            $(this).next().click();
+            $(this).css("background","#08c")
+        })
+
+
+
+        // $(".or1").click(function(){
+        //     check.css("background","#edf1f5")
+        //     $(".ra").click();
+        //     $(".or1").css("background","#08c")
+        // })
+        // $(".or2").click(function(){
+        //     check.css("background","#edf1f5")
+        //     $(".ra").click();
+        //     $(".or2").css("background","#08c")
+        // })
+        // $(".or3").click(function(){
+        //     check.css("background","#edf1f5")
+        //     $(".ra").click();
+        //     $(".or3").css("background","#08c")
+        // })
+
+          
+       $(".btn").click(function(){
+          $(".mc").css("display","block");
+       })
+
+       $(".fa-arrow-right").click(function(){
+           $(".mc").css("display","none");
+       })
+    //    $(window).click(function(){
+    //        $(".mc").css("display","none");
+    //    })
+
+
+      })
+        
+    
+    </script>
+</body>
+</html>
