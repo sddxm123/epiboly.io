@@ -43,31 +43,92 @@
             <table class="table table-bordered">
             <thead>
                 <tr class="yih row">
-                        <th class="col-md-2 col-xs-2">分类</th>
+                        <th class="col-md-2 col-xs-2" >分类</th>
                         <th class="col-md-2 col-xs-2">模块</th>
                         <th class="col-md-8 col-xs-8">功能点</th>
-                    </tr>  
+                </tr>  
             </thead>
-            <tbody>
-                <tr>
-                    <td  rowspan="3">基本功能</td>
-                    <td >注册登录</td>
-                    <td >密码找回</td>
-                </tr>
-                <tr>
-                    <td>第三方登录</td>
-                    <td>QQ</td>
-                </tr>
-                <tr>
-                        <td>用户中心</td>
-                        <td>用户资料修改更新</td>
-                    </tr>
+            <tbody class="ls">
+
             </tbody>
+            <!-- <tbody>
+                <tr>
+                    
+                    <td class="zuo_yi col-ma-2" rowspan="3" colspan="2" style="vertical-align:middle">基本功能</td>
+                    <td class="col-ma-2">注册登录</td>
+                    <td class="col-ma-8"><span> 密码找回 </span></td>
+                </tr>
+                <tr>
+                   
+                    <td>第三方登录</td>
+                    <td><span> QQ </span></td>
+                </tr>
+                <tr>
+                        
+                        <td>用户中心</td>
+                        <td><span>用户资料修改更新 </span> </td>
+                </tr>
+            </tbody> -->
+            <!-- <tbody>
+                    <tr>
+                        
+                        <td class="zuo_yi col-ma-2" rowspan="3" colspan="2" style="vertical-align:middle">基本功能</td>
+                        <td class="col-ma-2">注册登录</td>
+                        <td class="col-ma-8"><span> 密码找回 </span></td>
+                    </tr>
+                    <tr>
+                       
+                        <td>第三方登录</td>
+                        <td><span> QQ </span></td>
+                    </tr>
+                    <tr>
+                            
+                            <td>用户中心</td>
+                            <td><span>用户资料修改更新 </span> </td>
+                    </tr>
+                </tbody> -->
         </table>
                   
                
             </div>
         </div>
     </div>
+
+    <script>
+        var diyige = [
+            {"disanfang":"QQ,微信","zhucedlu":"密码找回","yhuzx":"用户资料修改更新"},
+        ]
+        var lgj = JSON.stringify(diyige);
+        localStorage.diyige=lgj;
+
+        var qidan=JSON.parse(localStorage.diyige);
+
+        for(i=0;i<diyige.length;i++){
+            var kuajia=$(`
+            <tr>  
+                        <td class="zuo_yi col-ma-2" rowspan="3" colspan="2" style="vertical-align:middle">基本资料</td>
+                        <td class="col-ma-2">注册登录</td>
+                        <td class="col-ma-8"><span>`+qidan[i].zhucedlu+`</span></td>
+                    </tr>
+                    <tr>
+                       
+                        <td>第三方登录</td>
+                        <td><span>`+qidan[i].disanfang+`</span></td>
+                    </tr>
+                    <tr>
+                            
+                            <td>用户中心</td>
+                            <td><span>`+qidan[i].yhuzx+`</span> </td>
+                    </tr>
+            `)
+            $(".ls").append(kuajia);
+        }
+        for(i=0;i<diyige.length;i++){
+            var kuajia=$(`
+           
+            `)
+            $(".ls").append(kuajia);
+        }
+    </script>
 </body>
 </html>
