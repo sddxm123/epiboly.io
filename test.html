@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username">
+    <input type="text" id="password">
+    <button type="button">登录</button>
+    <div id="test">
+
+    </div>
+    <a href="personal.html">主页</a>
+    <script src="js/jquery.js"></script>
+    <script src="js/jqsession.js"></script>
+    <script>
+        $(function(){
+            
+            if($.session.get("now")){
+                console.log(1)
+            };
+            $("button").click(function(){
+                nowuser=$("#username").val();
+
+                $.session.set("now",nowuser);
+                $.session.get(nowuser);
+                console.log($.session.get("now"))
+                var str="<p>"+$.session.get("now");+"</p>";
+                $("#test").append(str)
+            })
+        })
+    </script>
+</body>
+</html>

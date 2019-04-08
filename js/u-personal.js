@@ -1,9 +1,16 @@
 $(function () {
+    // console.log($.session.remove("now"))
+    if($.session.get("now")){
+        console.log(1)
+    }else{
+        console.log(2)
+    };
     // console.log($("body"))
     $(document).scrollTop(10)
     if ($(document).scrollTop() > 0) {
         $('.foot').css("position", "initial")
     }
+    //修改
     $('.alter').click(function (e) {
         e.preventDefault();
         $(this).css("display", "none")
@@ -14,7 +21,9 @@ $(function () {
             $('.foot').css("position", "initial")
         }
     });
+    //取消
     $('.user-btn-cancel').click(function (e) {
+        alert($(window).width()); 
         e.preventDefault();
         $(document).scrollTop(10)
         if ($(document).scrollTop() > 0) {
@@ -24,6 +33,7 @@ $(function () {
         $('.infoalter').eq($('.user-btn-cancel').index(this)).css("display", "none");
         $('.alter').eq($('.user-btn-cancel').index(this)).css("display", "block");
     })
+    //提示
     $('.skillshint em').click(function () {
         $(this).parent().hide();
     })
