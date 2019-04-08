@@ -1,13 +1,16 @@
+<!DOCTYPE html>
 <html>
 <head>
    <meta charset="utf-8"> 
    <title>注册界面</title>
-   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+   <!-- <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/zcgrxqf.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="js/rem.js"></script>
-   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- <script type="text/javascript" src="js/rem.js"></script> -->
+   <!-- <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script> -->
+   <!-- <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 </head>
 <body>
 	<div class="wrap">
@@ -29,24 +32,26 @@
 
   <div class="container">
        <div class="yhzc">
-          <h2> 注册企业需求方</h2>
+          <h2> 注册需求方</h2>
        </div>
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <form id="adduser" action="api/adduser.php" class="form">
-                    <div class="form-group">
-                        
-                        <input id="username" class="form-control" type="text" placeholder="用户名（即个性后缀，注册后无法修改）">
+                     
+                     <!-- 用户名注册 -->
+                    <div class="form-group"> 
+                        <input id="username" class="form-control" name="LoginName" type="text" placeholder="用户名（即个性后缀，注册后无法修改）">
                     </div>
 
+                    <!-- 密码设置 -->
                     <div class="form-group">
-                       
-                        <input id="password" class="form-control" type="password" placeholder="初始密码:">
+                        <input id="password" name="PSD" class="form-control" type="password" placeholder="初始密码:">
                     </div>
-                    <div class="form-group">
-                        
+                      <!-- 再次确定密码 -->
+                    <div class="form-group">   
                         <input id="setpassword" class="form-control" type="password" placeholder="确认密码:">
                     </div>
+
                     <div class="zhmm" id="ls">
                       
                         <input type="checkbox" name="remember" class="ant-checkbox-input" value="on">
@@ -54,8 +59,10 @@
                       
 
                     </div>
+
                     <div class="form-group">
-                        <input class="form-control button" type="button" placeholder="" value="确认注册">
+                        <input id="w-btn" class="form-control button" type="button" placeholder="" value="确认注册">
+                         <div class="mixfirm"></div>
                     </div>
                 </form>
             </div>
@@ -75,6 +82,89 @@
       </p>
     </footer> 
   </div>
+   <script type="text/javascript" src="jqure/jquery.js"></script>
+   <script type="text/javascript">
+       var click=document.getElementById("click");
+       click.onclick=function(){
+          console.log(111)
+         window.location.href = 'xzsf.html';
+         // window.location.href ='xzxqfyq.htm';
+           //当前页面打开
+       
+       }
 
+
+        function mixfirm(obj) {
+              var strs = '<h4>'+obj+'</h4>';
+              $(".mixfirm").html(strs);
+              $(".mixfirm").show();
+           }
+
+            $('#w-btn').click(function (event) {        if($("input[name=LoginName]").val()=="") {  //用户名为空时
+            $(".mixfirm").show();
+            mixfirm("用户名不能为空");
+            setTimeout(function() {
+                $(".mixfirm").hide();
+            },1000);
+            return false;
+        }
+        if($("input[name=PSD]").val()=="") {  //密码为空
+            $(".mixfirm").show();
+            mixfirm("密码不能为空");
+            setTimeout(function() {
+                $(".mixfirm").hide();
+            },1000);
+            return false;
+        }
+    });
+
+         var username=document.getElementById('username');
+          var obtn=document.getElementById('w-btn');
+          var password=document.getElementById("password");
+           // var obtn=document.getElementById('w-btn');
+          var setpassword=document.getElementById("setpassword");
+
+          var oousername =/^[a-zA-Z0-9_-]{4,16}$/;
+
+          var paster= /^[A-Za-z]+[0-9]+[A-Za-z0-9]*|[0-9]+[A-Za-z]+[A-Za-z0-9]*$/g;
+
+
+            // 用户名验证
+          username.onblur=function(){
+           if(oousername.test(username.value)){
+            // console.log(232)
+            username.style.border='1px solid #eee';
+           }else{
+            username.style.border="1px solid red";
+            username.setAttribute("placeholder","请输入用户名")
+           }
+          }
+
+         // 密码验证
+         password.onblur=function(){
+            if(paster.test(password.value)==true){
+              password.style.border='1px solid #eee';
+              
+            }else{
+              password.style.border="1px solid red";
+              password.setAttribute("placeholder","密码需要6到16个字母与数字字符结合");
+            }
+            console.log("密码需要6到16个字母与数字字符结合")
+          }
+
+       setpassword.onblur=function(){
+        if(password.value==setpassword.value){
+          setpassword.style.border='1px solid #eee';
+          console.log(true)
+         
+        }else{
+          setpassword.style.border='1px solid red';
+          setpassword.setAttribute("placeholder","2次输入密码不一样")
+          console.log(false)
+        }
+       }
+   </script>
+   <script src="js/bootstrap.min.js">
+   </script>
 </body>
 </html>
