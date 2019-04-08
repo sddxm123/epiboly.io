@@ -188,6 +188,9 @@ body {
   width: 154px;
   height: 136px;
 }
+.list{
+  border-radius: 5px;
+}
 @media screen and (max-width: 992px) {
   .left {
     display: none;

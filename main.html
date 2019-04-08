@@ -355,7 +355,69 @@
                });
            
          
+
+
+
+
+           var list1 = document.getElementsByClassName("option1-list")[0];
+           var divArr = list1.getElementsByTagName("div");
+        //    var  pre = divArr[0];
+
+           for(var i = 0; i<divArr.length; i++){
+               divArr[i].index = i;
+               divArr[i].onclick = function(){
+
+                for(a = 0; a < divArr.length; a++){
+                   divArr[a].style.color = "black"
+                   divArr[a].style.background = "white";
+                }
+
+                divArr[this.index].style.color = "white";
+                divArr[this.index].style.background = "#4289dc";
+                // pre = this;
+               }
+           }
           
+
+
+           var list1 = document.getElementsByClassName("option1-list")[1];
+           var div1Arr = list1.getElementsByTagName("div");
+        //    var  pre = divArr[0];
+
+           for(var z = 0; z<div1Arr.length; z++){
+            div1Arr[z].index = z;
+            div1Arr[z].onclick = function(){
+
+                for(b = 0; b < div1Arr.length; b++){
+                    div1Arr[b].style.color = "black"
+                    div1Arr[b].style.background = "white";
+                }
+
+                div1Arr[this.index].style.color = "white";
+                div1Arr[this.index].style.background = "#4289dc";
+                // pre = this;
+               }
+           }
+
+
+           var list1 = document.getElementsByClassName("option1-list")[2];
+           var div2Arr = list1.getElementsByTagName("div");
+        //    var  pre = divArr[0];
+
+           for(var c = 0; c<div2Arr.length; c++){
+               div2Arr[c].index = c;
+               div2Arr[c].onclick = function(){
+
+                for(v = 0; v < div2Arr.length; v++){
+                   div2Arr[v].style.color = "black"
+                   div2Arr[v].style.background = "white";
+                }
+
+                div2Arr[this.index].style.color = "white";
+                div2Arr[this.index].style.background = "#4289dc";
+                // pre = this;
+               }
+           }
            
            </script>
       
