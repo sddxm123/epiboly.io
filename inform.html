@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/headandtop.css">
+    <link rel="stylesheet" href="css/inform.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="z-top z-top2">
+        <nav class="navbar navbar-default head2" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="index.html">麻事</a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="main.html">项目</a></li>
+                        <li><a href="evaluate.html">估价</a></li>
+                        <li><a href="kfzym.html">开发者</a></li>
+                        <li><a href="help.html">帮助</a></li>
+
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="dljm.html" class="head-white">登录</a></li>
+                        <li><a href="xzsf.html" class="head-white">注册</a></li>
+                        <li class="login-user">
+                            <div class="user">
+                                <div class="portrait">
+                                    <img src="img/user1.jpg" alt="">
+                                </div>
+                                <i class="iconfont icon-xiala"></i>
+                            </div>
+                            <ul class="user-menu">
+                                <li>hello,bly</li>
+                                <li><a href="personal.html"><i class="iconfont icon-geren"></i>个人中心</a></li>
+                                <li><a href="javascript:;"><i class="iconfont icon-dunpai"></i>我的开发保</a></li>
+                                <li><a href="fabuxm.html"><i class="iconfont icon-pen"></i>我发布的项目</a></li>
+                                <li><a href="javascript:;"><i class="iconfont icon-lanzi"></i>我的报价单</a></li>
+                                <li><a href="javascript:;"><i class="iconfont icon-tuichu"></i>退出登录</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+
+<!-- 身体 -->
+  <div class="view-container">
+      <div class="form notification">
+          <div class="breadcrumb">
+              <span class="crumb-parent">通知中心</span>
+              <span class="crumb-arrow"> → </span>
+              <span class="crumb-current">所有通知</span>
+          </div>
+          <div class="user-menu">
+              <div class="side-nav">
+                  <ul>
+                      <li class="side-nav-header border-radius-top">
+                          <span>通知中心</span>
+                      </li>
+                      <li class="side-nav-item">
+                          <a href="#" class="nav-link">
+                              <i class="fa fa-inbox"></i>
+                              <span class="page-name">所有通知</span>
+                          </a>
+                      </li>
+                      <li class="side-nav-item">
+                          <a href="#" class="nav-link">
+                              <i class="fa fa-envelope-o"></i>
+                              <span class="page-name">未读通知</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="form-container">
+              <div class="notification-header">
+                  <h2>未读通知</h2>
+                  <button id="notification-markall" class="sub-button mart-button btn-with-shadow">标记所有为已读</button>   
+              </div>
+              <ul class="notification-section">
+                  <li class="none">
+                       <h4>无未读通知</h4>
+                  </li>
+              </ul>
+              <div id="messages">
+                <textarea id="txt1" ></textarea>
+                <input type="button" id="btn1" value="发布通知">
+                <ul id="ul"> 
+                </ul>
+             </div>
+             <div class="notification-pagination">
+                 <div class="pagination">
+                 <button class="qqq"><</button>
+                 <button class="qqq-1">1</button>
+                 <button class="qqq">></button>
+                </div>
+             </div>
+          </div>
+      
+      </div>
+  </div>
+
+
+<!-- 底部 -->
+    <footer id="mart-footer">
+        <div id="simple-footer">
+            <div class="footer-container">
+                <div class="site">
+                    <div class="brand">
+                        <a href="#">
+                            <img src="img/g.jpg">
+                            <p class="block">Copyright © 2014-2018 </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="lang-select">
+                    <div class="title">English</div>
+                    <select id="lang" class="select" name="lang">
+                        <option value="en">English</option>
+                        <option value="cn">中文版</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/inform.js"></script> 
+</body>
+</html>
