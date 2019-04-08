@@ -4,6 +4,12 @@ body{background:rgb(201, 201, 201);font-size:12px; margin-top:5px;font-family:"S
 ul,ol{list-style-type:none;} 
 select,input,img,select{vertical-align:middle;} 
 a{text-decoration:none;} 
+button{
+  outline: none;
+}
+body{
+  min-width: 320px;
+}
 /* 12 */
 .head {
     position: absolute;
@@ -80,7 +86,7 @@ a{text-decoration:none;}
     border-bottom: 20px solid transparent;
     cursor: pointer;
   }
-  .user .portrait {
+  .user .portrait { 
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -212,9 +218,12 @@ a{text-decoration:none;}
     float: left;
     font-size: 15px;
 }
+.dierge_er h3{
+  margin: 0;
+}
 .ybian{
-    width: 50%;
-    float: right;
+    /* width: 50%; */
+    /* float: right; */
     text-align: right;
 }
 .faxm,.btu{
@@ -247,6 +256,9 @@ a{text-decoration:none;}
     overflow: hidden;
     margin-bottom: 20px;
 }
+.dierge_er .dierge_san {
+  margin: 0;
+}
 .hezizj{
     border-bottom: 1px solid rgb(172, 82, 82);
 }
@@ -258,12 +270,16 @@ a{text-decoration:none;}
 }
 
 .hezizj_yb{
-    width: 50%;
+    /* width: 50%; */
+    padding-left: 0;
     float: right;
     text-align: right;
     font-size: 15px;
     color: #000000;
     line-height: 40px;
+}
+.dierge_er .hezizj_yb{
+    padding-left: 0;
 }
 .tishi_yi img{
     vertical-align: -2px;
@@ -312,7 +328,7 @@ a{text-decoration:none;}
     padding-right: 5px;
 }
 .tishi span{
-    padding-right: 5px;
+    padding-right: 2px;
 }
 .tishi_er{
     font-size: 15px;
@@ -325,6 +341,32 @@ a{text-decoration:none;}
     padding: 5px 10px;
     /* border: none; */
     border-radius: 3px;
+}
+/* 这里是下拉的 */
+.faxm .xiala{
+  padding: 15px 5px;
+  margin-top: 10px;
+  width: 150px;
+  z-index: 50;
+  height: auto;
+  position: absolute;
+  display: none;
+  background-color: #ffffff;
+  color: rgb(46, 46, 46);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px #c4c4c4;
+}
+.xiala li{
+  padding: 5px 0;
+}
+.spn:hover{
+  cursor: pointer;
+}
+.xiala li:hover{
+  cursor: pointer;
+  background-color: #2263d1;
+  color: #fff;
 }
 .qux{
     background-color: #fff;

@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+  outline: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: rgb(235, 235, 235);
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+/* .row{
+    margin: 0;
+    padding: 0;
+} */
+.cebla{
+    clear: both;
+}
+.box{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.box_ul{
+    padding: 0;
+}
+.box_ul li{
+    float: left;
+    list-style: none;
+    padding-right: 5px;
+}
+.box_er{
+    background-color: rgb(71, 71, 71);
+    overflow: hidden;
+    color: aliceblue;
+    padding: 20px 30px;
+    border-radius: 5px 5px 0 0;
+}
+.to-er{
+    color: aliceblue;
+    margin-top: 70px;
+    text-align: right;
+   
+}
+.to-er a{
+    padding: 7px 10px;
+    background-color: dodgerblue;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.to-er button{
+    background-color: cornflowerblue;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 70px;
+}
+.box_san{
+    padding: 20px 30px;
+    background-color: #ffffff;
+}
+.gneng{
+    background-color: cornflowerblue;
+    color: #ffffff;
+    display: inline-block;
+}
+.wangzh_yi{
+    margin-top: 30px;
+    border-top: 1px solid #9b9b9b;
+    border-bottom: 2px solid #000;
+    font-size: 24px;
+}
+.biaoge{
+    margin-top: 20px;
+}
+.yih{
+    background-color: #f0f0f0;
+}
+.biaoge table{
+    
+}
+.biaoge thead tr th{
+    font-weight: 150;
+    text-align: center;
+    color: #000;
+}
+.zuo_yi{
+    text-align: center;
+}
+@media screen and (max-width:800px){
+    .box{
+        width: 95%;
+    }
+    .to-er{
+        margin-top: 10px;
+    }
+    .box_er{
+        padding: 10px 0;
+    }
+    .box_san{
+        margin: 0;
+        padding: 0;
+    }
+    .wangzh{
+        text-align: center;
+    }
+    .gneng{
+        margin: 15px;
+        padding: 5px;
+    }
+    .wangzh_yi{
+        margin-top: 10px;
+    }
+}

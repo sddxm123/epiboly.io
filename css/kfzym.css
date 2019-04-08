@@ -392,11 +392,14 @@
         box-shadow: none;
     }
     .info{
-        line-height: 10px;
+        line-height: 16px;
         font-size: 8px;
         color: #7d7d7d;
         width: 100%;
     }
+    /* .info span{
+      padding-right: 25px;
+    } */
     .cye{
         font-size: 20px;
     }
@@ -623,6 +626,18 @@
     }
     .head .navbar-collapse {
       background: #2d3237;
+    }
+    .pai,.paier,.paisan{
+      width: 95%;
+    }
+    .qiuzhi .biaoti2 {
+      width: 95%;
+    }
+    .kflx{
+      width: 95%;
+    }
+    .pjia{
+      width: 95%;
     }
   }
   
