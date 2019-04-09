@@ -1,11 +1,5 @@
 $(function () {
-    // console.log($.session.remove("now"))
-    if($.session.get("now")){
-        console.log(1)
-    }else{
-        console.log(2)
-    };
-    // console.log($("body"))
+    
     $(document).scrollTop(10)
     if ($(document).scrollTop() > 0) {
         $('.foot').css("position", "initial")
