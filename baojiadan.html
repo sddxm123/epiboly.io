@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>报价单</title>
-    
+
     <link rel="stylesheet" href="css/bx/bootstrap.min.css">
     <link rel="stylesheet" href="css/baojiadan.css">
     <script src="js/shdaj/jquery.js"></script>
     <script src="js/shdaj/bootstrap.min.js"></script>
-    
+
 </head>
+
 <body>
     <div class="box">
         <ul class="box_ul">
             <li>估价报价 </li>
             <li> > </li>
-            <li> 功能清单 </li>
+            <li style="color:rgb(95, 95, 95)"> 功能清单 </li>
             <div class="cebla"></div>
 
         </ul>
-        <div class="box_er" >
+        <div class="box_er">
             <div class="to-yi col-md-8 col-xs-12">
                 <h3>web</h3>
-                <p>码市预估报价：18,800 ~ 25,850 元</p>
-                <p>预计开发周期：15 - 20 个工作日</p>
+                <p>码市预估报价：<span>18,800 ~ 25,850 元</span></p>
+                <p>预计开发周期：<span>15 - 20 </span>个工作日</p>
             </div>
             <div class="to-er col-md-4 col-xs-12">
                 <a href="#">发布我的需求</a>
@@ -35,23 +37,26 @@
         <div class="box_san">
             <span class="gneng">功能清单</span>
             <div class="wangzh">
-                <div class="wangzh_yi row"> 
+                <div class="wangzh_yi row">
                     <h3>wab网站</h3>
                 </div>
             </div>
             <div class="biaoge">
-            <table class="table table-bordered">
-            <thead>
-                <tr class="yih row">
-                        <th class="col-md-2 col-xs-2" >分类</th>
-                        <th class="col-md-2 col-xs-2">模块</th>
-                        <th class="col-md-8 col-xs-8">功能点</th>
-                </tr>  
-            </thead>
-            <tbody class="ls">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="yih row">
+                            <th class="col-md-2 col-xs-2">分类</th>
+                            <th class="col-md-2 col-xs-2">模块</th>
+                            <th class="col-md-8 col-xs-8">功能点</th>
+                        </tr>
+                    </thead>
+                    <tbody class="ls">
 
-            </tbody>
-            <!-- <tbody>
+                    </tbody>
+
+
+
+                    <!-- <tbody>
                 <tr>
                     
                     <td class="zuo_yi col-ma-2" rowspan="3" colspan="2" style="vertical-align:middle">基本功能</td>
@@ -69,7 +74,7 @@
                         <td><span>用户资料修改更新 </span> </td>
                 </tr>
             </tbody> -->
-            <!-- <tbody>
+                    <!-- <tbody>
                     <tr>
                         
                         <td class="zuo_yi col-ma-2" rowspan="3" colspan="2" style="vertical-align:middle">基本功能</td>
@@ -87,48 +92,144 @@
                             <td><span>用户资料修改更新 </span> </td>
                     </tr>
                 </tbody> -->
-        </table>
-                  
-               
+                </table>
+                <div class="wangzh">
+                    <div class="wangzh_yi row">
+                        <h3>后台管理</h3>
+                    </div>
+                </div>
+                <table class="table taber table-bordered">
+                    <thead>
+                        <tr class="yiho row">
+                            <th class="col-md-2 col-xs-2">分类</th>
+                            <th class="col-md-2 col-xs-2">模块</th>
+                            <th class="col-md-8 col-xs-8">功能点</th>
+                        </tr>
+                    </thead>
+                    <tbody class="lso">
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 
-    <script>
+     <script>
         var diyige = [
-            {"disanfang":"QQ,微信","zhucedlu":"密码找回","yhuzx":"用户资料修改更新"},
+            { "disanfang": "QQ", "zhucedlu": "密码找回", "yhuzx": "用户资料修改更新", "weix": "微信" },
         ]
         var lgj = JSON.stringify(diyige);
-        localStorage.diyige=lgj;
+        localStorage.diyige = lgj;
 
-        var qidan=JSON.parse(localStorage.diyige);
+        var qidan = JSON.parse(localStorage.diyige);
 
-        for(i=0;i<diyige.length;i++){
-            var kuajia=$(`
+        for (i = 0; i < diyige.length; i++) {
+            var kuajia = $(`
             <tr>  
                         <td class="zuo_yi col-ma-2" rowspan="3" colspan="2" style="vertical-align:middle">基本资料</td>
                         <td class="col-ma-2">注册登录</td>
-                        <td class="col-ma-8"><span>`+qidan[i].zhucedlu+`</span></td>
+                        <td class="col-ma-8"><span>`+ qidan[i].zhucedlu + `</span></td>
                     </tr>
                     <tr>
                        
                         <td>第三方登录</td>
-                        <td><span>`+qidan[i].disanfang+`</span></td>
+                        <td><span>`+ qidan[i].disanfang + qidan[i].weix + `</span></td>
                     </tr>
                     <tr>
                             
                             <td>用户中心</td>
-                            <td><span>`+qidan[i].yhuzx+`</span> </td>
+                            <td><span>`+ qidan[i].yhuzx + `</span> </td>
                     </tr>
+                   
+                   
             `)
             $(".ls").append(kuajia);
         }
-        for(i=0;i<diyige.length;i++){
-            var kuajia=$(`
+        for (i = 0; i < diyige.length; i++) {
+            var kuajia = $(`
            
             `)
             $(".ls").append(kuajia);
         }
-    </script>
+
+        // --------------
+        var diyige = [
+            { "fenlei": "高级功能", "mkyi": "通知推送方式", "gndyi": "邮件通知", "mker": "高级搜索", "gnder": "算法搜索", "mksan": "客户服务", "gndsan": "工单列表详情", "mksi": "推广", "gndsi": "推荐注册" },
+            { "fenlei": "其他", "mkyi": "UI设计（单选）", "gndyi": "普通设计", "mker": "桌面端分辨率支持（宽度）", "gnder": "默认", "mksan": "移动端响应式	", "gndsan": "默认", "mksi": "浏览器兼容性	", "gndsi": "默认" }
+        ]
+        var lgj = JSON.stringify(diyige);
+        localStorage.diyige = lgj;
+
+        var qidan = JSON.parse(localStorage.diyige);
+
+        for (i = 0; i < diyige.length; i++) {
+            var kuajia = $(`
+            <tr>  
+                        <td class="zuo_yi col-ma-2" rowspan="4" colspan="2" style="vertical-align:middle">`+ qidan[i].fenlei + `</td>
+                        <td class="col-ma-2">`+ qidan[i].mkyi + `</td>
+                        <td class="col-ma-8"><span>`+ qidan[i].gndyi + `</span></td>
+                    </tr>
+                    <tr>
+                       
+                        <td>`+ qidan[i].mker + `</td>
+                        <td><span>`+ qidan[i].gnder + `</span></td>
+                    </tr>
+                    <tr>
+                            
+                            <td>`+ qidan[i].mksan + `</td>
+                            <td><span>`+ qidan[i].gndsan + `</span> </td>
+                    </tr>
+
+                    <tr>
+                            
+                            <td>`+ qidan[i].mksi + `</td>
+                            <td><span>`+ qidan[i].gndsi + `</span> </td>
+                    </tr>
+
+            `)
+            $(".ls").append(kuajia);
+        }
+        for (i = 0; i < diyige.length; i++) {
+            var kuajia = $(`
+           
+            `)
+            $(".ls").append(kuajia);
+        }
+
+        var diyige = [
+            { "htgnyi": "主内容增删改查 文本搜索 筛选和排序 内容发布状态管理", "htgner": "用户信息查看" },
+        ]
+        var lgj = JSON.stringify(diyige);
+        localStorage.diyige = lgj;
+
+        var qidan = JSON.parse(localStorage.diyige);
+
+        for (i = 0; i < diyige.length; i++) {
+            var kuajia = $(`
+            <tr>  
+                        <td class="zuo_yi col-ma-2"  colspan="2" style="vertical-align:middle">基本功能</td>
+                        <td class="col-ma-2">平台主内容展示</td>
+                        <td class="col-ma-8"><span>`+ qidan[i].htgnyi + `</span></td>
+                    </tr>
+                    <tr>
+                       <td colspan="2" style="text-align: center">高级功能</td>
+                        <td>用户管理</td>
+                        <td><span>`+ qidan[i].htgner + `</span></td>
+                    </tr>
+                    
+                   
+                   
+            `)
+            $(".lso").append(kuajia);
+        }
+        for (i = 0; i < diyige.length; i++) {
+            var kuajia = $(`
+           
+            `)
+            $(".lso").append(kuajia);
+        }
+
+    </script> 
 </body>
+
 </html>

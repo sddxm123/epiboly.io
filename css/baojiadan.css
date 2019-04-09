@@ -67,6 +67,7 @@ body{
 }
 .box_san{
     padding: 20px 30px;
+    margin-bottom: 30px;
     background-color: #ffffff;
 }
 .gneng{
@@ -83,11 +84,8 @@ body{
 .biaoge{
     margin-top: 20px;
 }
-.yih{
+.yih,.yiho{
     background-color: #f0f0f0;
-}
-.biaoge table{
-    
 }
 .biaoge thead tr th{
     font-weight: 150;
@@ -96,6 +94,16 @@ body{
 }
 .zuo_yi{
     text-align: center;
+}
+.taber{
+    margin-top: 20px;
+}
+.box_san td span{
+    font-size: 12px;
+}
+.box_san td span:hover{
+    background-color: antiquewhite;
+    cursor: copy;
 }
 @media screen and (max-width:800px){
     .box{
