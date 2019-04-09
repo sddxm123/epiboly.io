@@ -71,7 +71,7 @@ body{
     display: block;
   }
   .z-top2 .head-white {
-    display: none;
+    /* display: none; */
   }
   .z-top2 .login-user {
     display: block;
