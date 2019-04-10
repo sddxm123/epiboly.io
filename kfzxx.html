@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
    <meta charset="utf-8"> 
@@ -38,12 +38,15 @@
                         <li><a href="evaluate.html">估价</a></li>
                         <li><a href="kfzym.html">开发者</a></li>
                         <li><a href="help.html">帮助</a></li>
-
+                          <li><a href="personal.html" class="dengl">个人中心</a></li>
+                        <li><a href="fabuxm.html" class="dengl">我发布的项目</a></li>
+                        <li><a href="javascript:;" class="dengl">我的报价单</a></li>
+                        <li><a href="dljm.html" class="dengl">退出登录</a></li>
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="dljm.html" class="head-white">登录</a></li>
-                        <li><a href="xzsf.html" class="head-white">注册</a></li>
+                        <li><a href="dljm.html" class="head-white denglu">登录</a></li>
+                        <li><a href="xzsf.html" class="head-white denglu">注册</a></li>
                         <li class="login-user">
                             <div class="user">
                                 <div class="portrait">
@@ -178,10 +181,9 @@
              <span class="w-spano">转态<a>未取得</a></span>
            </p>
 
-           <div class="w-sj">
-             
-           </div>
-           <div class="w-contets row">
+           
+
+          <!--  <div class="w-contets row">
              <p class=" ww-p col-xs-7">计划交付日期</p>
              <p class="ww-p col-xs-5">计划净额</p>
 
@@ -201,7 +203,7 @@
                  <button>编辑阶段</button>
                  <button class="w-button">托管阶段数</button>
               </p>
-           </div>
+           </div> -->
         </div>
 
         
@@ -269,20 +271,54 @@
         </div>
     </div>
     
-   <!--  <script type="text/javascript">
+   
+    <script src="jqure/jquery.js"></script>
+        <script type="text/javascript">
         var sheji=[
         {"tp":"计划交付日期","jh":"计划金额"},
         {"tp":"计划交付日期","jh":"计划金额"}
         ];
 
         var wsheji=JSON.stringify(sheji);
-        localStorage.users = wsheji;
+        localStorage.sheji = wsheji;
 
-        var sheji =JSON.parse(localStorage.users);
-    </script> -->
+        var sheji2 =JSON.parse(localStorage.sheji);
 
-    <script src="jqure/jquery.js"></script>
+        for(var i=0;i<sheji2.length;i++){
+           var wsj1= $(`
+           <div class="w-contets row">
+             <p class=" ww-p col-xs-7">`+sheji[i].tp+`</p>
+             <p class="ww-p col-xs-5">`+sheji[i].jh+`</p>
+
+             <p class="ww-p1-1  col-xs-7">计划交付日期
+
+                   <span class="w-block">已延期10天</span>
+             </p>
+             <p class="ww-p1-1 col-xs-5">￥1206</p>
+             <p class="ww-p1  col-xs-7">交付说明</p>
+             <p class="ww-p1 col-xs-5"></p>
+             <p class="ww-p1-1  col-xs-7">完成设计图</p>
+             <p class="ww-p1 col-xs-5"></p>
+           </div>
+
+           <div class="w-dinji row">
+              <p class="ww-botton" >
+                 <button>编辑阶段</button>
+                 <button class="w-button">托管阶段数</button>
+              </p>
+           </div>
+             `)
+        }
+
+         $(".w-shejitu").append(wsj1);
+
+    </script>
+
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jqsession.js"></script>
+    <script src="js/tophead.js"></script>
+
 <!--     <script type="text/javascript" src="jqure/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script> -->
 </body>
