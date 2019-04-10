@@ -26,6 +26,13 @@ main{
 }
 
 
+
+
+.b-publish .alert{
+	margin: 0;
+	margin-top: 15px;
+	padding: 7px 30px 7px 15px;
+}
 .type{
 	margin-bottom: 2rem;
 }

@@ -34,12 +34,16 @@
                         <li><a href="evaluate.html">估价</a></li>
                         <li><a href="kfzym.html">开发者</a></li>
                         <li><a href="help.html">帮助</a></li>
+                        <li><a href="personal.html" class="dengl">个人中心</a></li>
+                        <li><a href="fabuxm.html" class="dengl">我发布的项目</a></li>
+                        <li><a href="javascript:;" class="dengl">我的报价单</a></li>
+                        <li><a href="dljm.html" class="dengl">退出登录</a></li>
 
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="dljm.html" class="head-white">登录</a></li>
-                        <li><a href="xzsf.html" class="head-white">注册</a></li>
+                        <li><a href="dljm.html" class="head-white denglu">登录</a></li>
+                        <li><a href="xzsf.html" class="head-white denglu">注册</a></li>
                         <li class="login-user">
                             <div class="user">
                                 <div class="portrait">
@@ -105,6 +109,14 @@
 						<label class="col-sm-3 form-lable">项目名称</label>
 						<div class="col-sm-9">
 							<input type="text" class="form-control" placeholder="30字符以内" id="projectName">
+                            <!-- <div class="alert alert-danger alert-dismissable">
+                                <button type="button" class="close" data-dismiss="alert"
+                                        aria-hidden="true">
+                                    &times;
+                                </button>
+                                错误！请进行一些更改。
+                            </div> -->
+
 						</div>
 					</div>
 					<div class="form-group">
@@ -130,7 +142,7 @@
 						<label class="col-sm-3 form-lable">期望交付周期</label>
 						<div class="col-sm-9">
 							<div class="row pad">
-								<div class="col-xs-8"><input type="text" class="form-control" placeholder="请输入交付周期" name=""></div>
+								<div class="col-xs-8"><input type="text" class="form-control" placeholder="请输入交付周期" name="" id="projectPeriod"></div>
 								<div class="col-xs-4">天</div>
 								<div class="clear"></div>
 							</div>
@@ -140,7 +152,7 @@
 						<label class="col-sm-3 form-lable">项目描述</label>
 						<div class="col-sm-9">
 							<div class="form-input-top">
-								<input type="text" class="form-control" placeholder="请尽量详细描述您的项目" name="">
+								<input type="text" class="form-control" placeholder="请尽量详细描述您的项目" name="" id="projectDetails">
 							</div>
 							<span class="view"><i class="fa fa-angle-double-down"></i>查看范例</span>
 							<div class="clear"></div>
@@ -190,7 +202,7 @@
 						<label class="col-sm-3 form-lable">招募要求</label>
 						<div class="col-sm-9">
 							<div class="form-input-top">
-								<input type="text" class="form-control" placeholder="您可以对开发者所在地区、从事行业、擅长技能等方面提出要求" name="">
+								<input type="text" class="form-control" placeholder="您可以对开发者所在地区、从事行业、擅长技能等方面提出要求" name="" id="projectAsk">
 							</div>
 							<span class="view"><i class="fa fa-angle-double-down"></i>查看范例</span>
 							<div class="clear"></div>
@@ -211,17 +223,17 @@
 							<div class="row">
 								<div class="col-sm-6">
 									<label>您的姓名</label>
-									<input type="text" class="form-control" placeholder="姓名" name="">
+									<input type="text" class="form-control" placeholder="姓名" name="" id="projectUser">
 								</div>
 								<div class="col-sm-6">
 									<label>您的邮箱</label>
-									<input type="text" class="form-control email" placeholder="邮箱" name="">
+									<input type="text" class="form-control email" placeholder="邮箱" name="" id="projectEmail">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
 									<label>您的手机</label>
-									<input type="text" class="form-control" value="123456789" name="">
+									<input type="text" class="form-control" value="123456789" name="" id="projectPhone">
 								</div>
 							</div>
 							
@@ -313,6 +325,8 @@
 
 
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jqsession.js"></script>
+    <script type="text/javascript" src="js/tophead.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/publish.js"></script> 
     
