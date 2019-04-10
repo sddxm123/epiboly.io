@@ -285,10 +285,24 @@ footer{
 .home-span2{
 	margin-left: 40px;
 }
+.srevice-name-1{
+	display: none;
+   color: #2EB135;
+   text-align: center;
+}
 @media screen  and (max-width:728px){
     .home-span2{
 		display: block;
 		text-align: left;
 		margin-left: 0px;
+	}
+	.srevice-name{
+		display: none;
+	}
+	.srevice-name-1{
+		display: block;
+	}
+	#left-1{
+		display: none;
 	}
 }

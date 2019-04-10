@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <div class="col-md-12 col-xs-12">
+    <div class="col-md-9 col-xs-12">
         <form>
             <div class="wrapper-1">
                 <div class="functions-3wwxx">
@@ -41,6 +41,7 @@
                                             title="Popover title" data-container="body" data-toggle="popover"
                                             data-content="侧的 Popover 中的一些内容 —— toggle 方法">
                                             邮箱
+
                                         </span>
                                     </label>
                                     <label class="functionLabel">
@@ -853,6 +854,19 @@
             </div>
         </form>
 </div> 
+<div class="col-md-3 col-xs-12">
+    <div class="preview-9AiIp">
+        <div class="inner-1ABkK">
+            <h2>功能点描述</h2>
+            <article>
+                <div class="nnow">鼠标移动到对应的功能点上，此处会显示功能点说明</div>
+                <div class="previewIcon-1msWi">
+                    <img src="img/4.png" alt="">
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
 <footer class="footer-1">
     <div class="simple">
         <div class="footer-container">
@@ -888,8 +902,30 @@ $(function () {
         animation:true,
         html:true,
         container:"body",
-        content:"<img src='img/4.png'>"
+        content:"哈哈哈哈"
     });
 });
+
+$(document).ready(function(){
+    var i=0;
+    $("input").mouseover(function(){
+        i++;
+        if(i==1){
+            $(".preview-9AiIp").show();
+        }
+        var a=$(this).offset().top;
+        console.log(a);
+        $(".preview-9AiIp").css({
+            "top":a +"px"
+        });
+        //    $("input").mouseout(function(){
+        //     $(".preview-9AiIp").hide();
+        // });
+    });
+});
+
+
+
+
 </script>
 </html>

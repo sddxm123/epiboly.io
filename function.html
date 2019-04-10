@@ -6,30 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jqsession.js"></script>
+    <script src="js/tophead.js"></script>
+    <script src="js/inform.js"></script> 
     <link rel="stylesheet" type="text/css" href="css/function.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top" >
-        <div class="container">
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand" id="huo" style="padding:0"><img src="img/feima.png" id="img-1"></a>
-                <!-- <button class="btn-2">找服务</button> -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right" style="margin-top:0">
-                            <li class="active"><a href="#"><span class="glyphicon glyphicon-wrench"> 火警科技有限公司</span></a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-knight"> 会员等级：</span></a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-tower"> 信誉积分：100</span></a></li>
+    <!-- 头部 -->
+    <div class="z-top z-top2">
+        <nav class="navbar navbar-default head2" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="index.html">麻事</a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="main.html">项目</a></li>
+                        <li><a href="evaluate.html">估价</a></li>
+                        <li><a href="kfzym.html">开发者</a></li>
+                        <li><a href="help.html">帮助</a></li>
+
+                        <li><a href="personal.html" class="dengl">个人中心</a></li>
+                            <li><a href="fabuxm.html" class="dengl">我发布的项目</a></li>
+                            <li><a href="javascript:;" class="dengl">我的报价单</a></li>
+                            <li><a href="dljm.html" class="dengl">退出登录</a></li>
+    
                     </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="dljm.html" class="head-white denglu">登录</a></li>
+                        <li><a href="xzsf.html" class="head-white denglu">注册</a></li>
+                        <li class="login-user">
+                            <div class="user">
+                                <div class="portrait">
+                                    <img src="img/user1.jpg" alt="">
+                                </div>
+                                <i class="iconfont icon-xiala"></i>
+                            </div>
+                            <ul class="user-menu">
+                                <li>hello,bly</li>
+                                <li><a href="personal.html"><i class="iconfont icon-geren"></i>个人中心</a></li>
+                                <li><a href="javascript:;"><i class="iconfont icon-dunpai"></i>我的开发保</a></li>
+                                <li><a href="fabuxm.html"><i class="iconfont icon-pen"></i>我发布的项目</a></li>
+                                <li><a href="javascript:;"><i class="iconfont icon-lanzi"></i>我的报价单</a></li>
+                                <li><a href="javascript:;"><i class="iconfont icon-tuichu"></i>退出登录</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
 
 
@@ -108,23 +146,27 @@
                                                     <label class="functionLabel">
                                                         <span>
                                                             <input id="m-0" type="checkbox" value="on"
-                                                            title="Popover title" data-container="body" data-toggle="popover"
-                                                            data-content="侧的 Popover 中的一些内容 —— toggle 方法">
+                                                            title="邮箱" data-container="body" data-toggle="popover"
+                                                            data-content="QQ邮箱，马化腾大佬的">
                                                             邮箱
                                                         </span>
                                                     </label>
                                                     <label class="functionLabel">
-                                                        <span>
-                                                            <input id="m-0" type="checkbox" value="on">
-                                                            邮箱
-                                                        </span>
-                                                    </label>
-                                                    <label class="functionLabel">
-                                                        <span>
-                                                            <input id="m-0" type="checkbox" value="on">
-                                                            邮箱
-                                                        </span>
-                                                    </label>
+                                                            <span>
+                                                                <input id="m-0" type="checkbox" value="on"
+                                                                title="邮箱" data-container="body" data-toggle="popover"
+                                                                data-content="QQ邮箱，马化腾大佬的">
+                                                                邮箱
+                                                            </span>
+                                                        </label>
+                                                        <label class="functionLabel">
+                                                                <span>
+                                                                    <input id="m-0" type="checkbox" value="on"
+                                                                    title="邮箱" data-container="body" data-toggle="popover"
+                                                                    data-content="QQ邮箱，马化腾大佬的">
+                                                                    邮箱
+                                                                </span>
+                                                            </label>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -135,12 +177,14 @@
                                                     </label>
                                                 </td>
                                                 <td>
-                                                    <label class="functionLabel">
-                                                        <span>
-                                                            <input id="m-0" type="checkbox" value="on">
-                                                            邮箱
-                                                        </span>
-                                                    </label>
+                                                        <label class="functionLabel">
+                                                                <span>
+                                                                    <input id="m-0" type="checkbox" value="on"
+                                                                    title="邮箱" data-container="body" data-toggle="popover"
+                                                                    data-content="QQ邮箱，马化腾大佬的">
+                                                                    邮箱
+                                                                </span>
+                                                            </label>
                                                     <label class="functionLabel">
                                                         <span>
                                                             <input id="m-0" type="checkbox" value="on">
@@ -923,11 +967,25 @@
                             </div>
                         </form>
                 </div> 
+           
+                        <div class="preview-9AiIp">
+                            <div class="inner-1ABkK">
+                                <h2>功能点描述</h2>
+                                <article>
+                                    <div class="nnow">鼠标移动到对应的功能点上，此处会显示功能点说明</div>
+                                    <div class="previewIcon-1msWi">
+                                        <img src="img/4.png" alt="">
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                 
            </div>
                 </div>
             </div>
         </div>
     </div>
+
     <footer class="footer-1">
         <div class="simple">
             <div class="footer-container">
@@ -942,9 +1000,37 @@
             </div>
         </div>
     </footer>
+<script>
+$(function () { 
+	$("[data-toggle='popover']").popover({
+        animation:true,
+        html:true,
+        container:"body",
+        content:"哈哈哈哈"
+    });
+});
 
 
-    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
+$(document).ready(function(){
+    var i=0;
+    $("input").mouseover(function(){
+        i++;
+        if(i==1){
+            $(".preview-9AiIp").show();
+        }
+        var a=$(this).offset().top;
+        console.log(a);
+        $(".preview-9AiIp").css({
+            "top":a +"px"
+        });
+        //    $("input").mouseout(function(){
+        //     $(".preview-9AiIp").hide();
+        // });
+    });
+});
+
+</script>
+
+ 
 </body>
 </html>
