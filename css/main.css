@@ -74,7 +74,6 @@ body {
 }
 .container .right-second .option1 .option1-list .listfirst {
   width: 62px;
-  height: 25px;
   padding: 4px 17px;
   background: #4289dc;
   text-align: center;
@@ -187,9 +186,6 @@ body {
 .cm-pop .cm-pop-second img {
   width: 154px;
   height: 136px;
-}
-.list{
-  border-radius: 5px;
 }
 @media screen and (max-width: 992px) {
   .left {

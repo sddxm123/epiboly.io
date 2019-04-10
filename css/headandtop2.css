@@ -13,6 +13,7 @@
   border-radius: 6px;
 }
 .z-top .login-user {
+  display: none;
   position: relative;
 }
 .z-top .login-user > div {
@@ -54,6 +55,12 @@
   color: #a9a9a9;
 }
 .z-top .login-user:hover .user-menu {
+  display: block;
+}
+.z-top2 .head-white {
+  display: none;
+}
+.z-top2 .login-user {
   display: block;
 }
 .z-top2 .login-user .user {
@@ -101,10 +108,6 @@
   color: #e0e6ed;
   font-size: 14px;
   font-weight: 700;
-}
-.head .navbar-nav .dengl,
-.head2 .navbar-nav .dengl {
-  display: none;
 }
 .head .navbar-nav > li > a:hover {
   color: #ccd3dc;
@@ -188,12 +191,5 @@
   }
   .head .navbar-collapse {
     background: #2d3237;
-  }
-  .z-top .login-user {
-    display: none;
-  }
-  .head .navbar-nav .dengl,
-  .head2 .navbar-nav .dengl {
-    display: block;
   }
 }
