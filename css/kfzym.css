@@ -603,7 +603,7 @@
   .foot img {
     width: 100%;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 500px) {
     .foot {
       padding-top: 0;
       padding-bottom: 0px;

@@ -1,6 +1,16 @@
 {
     "jeson":[
-        { "fenlei": "高级功能", "mkyi": "通知推送方式", "gndyi": "邮件通知", "mker": "高级搜索", "gnder": "算法搜索", "mksan": "客户服务", "gndsan": "工单列表详情", "mksi": "推广", "gndsi": "推荐注册" },
-        { "fenlei": "其他", "mkyi": "UI设计（单选）", "gndyi": "普通设计", "mker": "桌面端分辨率支持（宽度）", "gnder": "默认", "mksan": "移动端响应式	", "gndsan": "默认", "mksi": "浏览器兼容性	", "gndsi": "默认" }
+        {"bianhao":"3193","name":"额我热","liulan":"8","baoming":"4","zhuangtai":"招募中","col":"rgb(9, 174, 9)","img":"jusho (1).png","kaifa":"APP开发","money":"30000","zhoqi":"5","yingcyi":"","yingcer":""},
+        {"bianhao":"3193","name":"我是谁","liulan":"120","baoming":"6","zhuangtai":"已结束","col":"red","img":"07-dsgn-template-(1)_01.jpg","kaifa":"UI设计","money":"30000","zhoqi":"10","yingcyi":"none","yingcer":"none"},
+        {"bianhao":"3193","name":"我是谁","liulan":"120","baoming":"6","zhuangtai":"开发中","col":"#000079","img":"07-dsgn-template-恢复的_04.jpg","kaifa":"UI设计","money":"30000","zhoqi":"5","yingcyi":"none","yingcer":""},
+        {"bianhao":"3193","name":"我是谁","liulan":"120","baoming":"6","zhuangtai":"待支付","col":"#A23400","img":"07-dsgn-template-恢复的_04.jpg","kaifa":"JAVA开发","money":"30000","zhoqi":"5","yingcyi":"none","yingcer":"none"},
+        {"bianhao":"3193","name":"我是谁","liulan":"120","baoming":"6","zhuangtai":"已取消","col":"#696969","img":"07-dsgn-template-恢复的_04.jpg","kaifa":"JAVA开发","money":"30000","zhoqi":"5","yingcyi":"none","yingcer":"none"},
+        
+
+        {"bianhao":"3193","name":"额我热","liulan":"8","baoming":"4","zhuangtai":"招募中","col":"rgb(9, 174, 9)","img":"jusho (1).png","kaifa":"APP开发","money":"30000","zhoqi":"5","yingcyi":"","yingcer":""},
+        {"bianhao":"3193","name":"我是谁","liulan":"120","baoming":"6","zhuangtai":"已结束","col":"red","img":"07-dsgn-template-(1)_01.jpg","kaifa":"UI设计","money":"30000","zhoqi":"10","yingcyi":"none","yingcer":"none"},
+        {"bianhao":"3193","name":"我是谁","liulan":"120","baoming":"6","zhuangtai":"开发中","col":"#000079","img":"07-dsgn-template-恢复的_04.jpg","kaifa":"UI设计","money":"30000","zhoqi":"5","yingcyi":"none","yingcer":""},
+        {"bianhao":"3193","name":"我是谁","liulan":"120","baoming":"6","zhuangtai":"待支付","col":"#A23400","img":"07-dsgn-template-恢复的_04.jpg","kaifa":"JAVA开发","money":"30000","zhoqi":"5","yingcyi":"none","yingcer":"none"},
+        {"bianhao":"3193","name":"我是谁","liulan":"120","baoming":"6","zhuangtai":"已取消","col":"#696969","img":"07-dsgn-template-恢复的_04.jpg","kaifa":"JAVA开发","money":"30000","zhoqi":"5","yingcyi":"none","yingcer":"none"}
     ]
 }
