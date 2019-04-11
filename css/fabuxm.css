@@ -71,7 +71,7 @@ body{
     display: block;
   }
   .z-top2 .head-white {
-    display: none;
+    /* display: none; */
   }
   .z-top2 .login-user {
     display: block;
@@ -288,7 +288,7 @@ body{
     display: inline-block;
 }
 .tutu img{
-    padding-left: 8px
+    padding-left: 5px
 }
 .dierge_san{
     width: 100%;
@@ -306,8 +306,10 @@ body{
     padding-top: 100px;
 }
 .zuo_tu {
-    width: 50%;
-    height: 100%;
+    /* width: 50%;
+    height: 100%; */
+    width: 250px;
+    height: 120px;;
 }
 .zuo_tu img{
     width: 100%;
@@ -363,7 +365,7 @@ body{
 .spn:hover{
   cursor: pointer;
 }
-.xiala li:hover{
+.xiala li:hover{  
   cursor: pointer;
   background-color: #2263d1;
   color: #fff;
@@ -382,8 +384,12 @@ body{
     background-color:#2263d1;
     border:1px solid  #2263d1;
     color: #fff;
+    
+    
 }
-
+.hezizj .hezizj_yb {
+  padding-right: 10px;
+}
 @media screen and (max-width:800px){
     .faxm img{
         width: 12px;
@@ -418,7 +424,7 @@ body{
         padding: 0;
     }
     .tutu img {
-        width: 20px;
+        width: 15px;
         height: 12px;
     }
     .tishi_yi img{

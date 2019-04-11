@@ -74,6 +74,7 @@
 }
 .bti a:hover{
     color: black;
+    
 }
 .pai{
     width: 80%;
@@ -81,7 +82,7 @@
     margin: 0 auto;
     margin-top: 20px;
     overflow: hidden;
-    /* display: none; */
+    /* margin-bottom: 25px; */
 }
 .paier{
     width: 80%;
@@ -90,6 +91,7 @@
     margin-top: 20px;
     overflow: hidden;
     display: none;
+    
 }
 .shoruli{
     /* background-color: #bcff70; */
@@ -497,7 +499,7 @@
     display: block;
   }
   .z-top2 .head-white {
-    display: none;
+    /* display: none; */
   }
   .z-top2 .login-user {
     display: block;
@@ -603,7 +605,7 @@
   .foot img {
     width: 100%;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 500px) {
     .foot {
       padding-top: 0;
       padding-bottom: 0px;
