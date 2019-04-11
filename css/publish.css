@@ -26,6 +26,13 @@ main{
 }
 
 
+
+
+.b-publish .alert{
+	margin: 0;
+	margin-top: 15px;
+	padding: 7px 30px 7px 15px;
+}
 .type{
 	margin-bottom: 2rem;
 }
@@ -168,6 +175,16 @@ main{
 }
 
 
+.pcode{
+	position: relative;
+}
+#canvas{
+	position: absolute;
+	right: 17px;
+	top: 22px;
+	width: 90px;
+	height: 31px;
+}
 
 .notice{
 	padding: 2.5rem;
