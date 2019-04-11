@@ -107,15 +107,15 @@
         <!-- 统计 -->
         <div class="row figure-page">
             <div class="col-xs-4 col-sm-4 col-md-4">
-                <h4>229,944,703</h4>
+                <h4 id="totalMoney">229,944,703</h4>
                 <p>累计总金额</p>
             </div>
             <div class="col-xs-4 col-sm-4 col-md-4">
-                <h4>9,703</h4>
+                <h4 id="pnum">9,703</h4>
                 <p>项目数量</p>
             </div>
             <div class="col-xs-4 col-sm-4 col-md-4">
-                <h4>121,773</h4>
+                <h4 id="wnum">121,773</h4>
                 <p>注册开发者</p>
             </div>
         </div>
@@ -287,6 +287,18 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+        })
+        $.getJSON("http://47.106.220.143:8080/xiaobai/project/totalMoney",function(res){
+            if(res.data>1000){
+                res.data = res.data.toLocaleString();
+            }
+            $("#totalMoney").html(res.data)
+        })
+        $.getJSON("http://47.106.220.143:8080/xiaobai/project/number",function(res){
+            $("#pnum").html(res.data)
+        })
+        $.getJSON("http://47.106.220.143:8080/xiaobai/worker/number",function(res){
+            $("#wnum").html(res.data)
         })
     </script>
 </body>
