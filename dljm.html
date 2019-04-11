@@ -60,7 +60,7 @@
                     </div>
                      <!-- 确认登入 -->
                     <div class="form-group">
-                        <input class="t-btn btnYes form-control button" type="button" placeholder="" value="确认登录">
+                        <a id="loginhref" href="#"><input class="t-btn btnYes form-control button" type="button" placeholder="" value="确认登录"></a> 
 
                          <div class="mixfirm"></div>
                          <!-- 定时弹框 -->
@@ -79,98 +79,8 @@
     </footer> 
   </div>
    <script type="text/javascript" src="jqure/jquery.js"></script>
-  <script type="text/javascript">
-          var btn=document.getElementById("click");
-          // var obtn=document.getElementById("obtn");
-
-            btn.onclick = function(){
-                 console.log(111)
-                 // window.location.href = 'xzkfzzc.html';
-                 window.location.href ='xzsf.html';
-                   //当前页面打开
-               }
-
-
-          
-          //确认弹出框js
-            function mixfirm(obj) {
-              var strs = '<h4>'+obj+'</h4>';
-              $(".mixfirm").html(strs);
-              $(".mixfirm").show();
-           }
-
-
-
-          $(function() {
-　　　　　//根据localStorage中是否有值，判断用户是否登录过
-        if(window.localStorage){  //用户登录过
-            var name1 = localStorage.getItem("loginName"); //获取存储的用户名
-            var pwd1 = localStorage.getItem("pwd");        //获取存储的密码
-            $("input[name=LoginName]").val(name1);         //用户名赋值 
-            $("input[name=PSD]").val(pwd1);                //密码赋值
-        }else{ 
-            $("input[name=LoginName]").val("");
-            $("input[name=PSD]").val("");
-        }
-    })
-　　//点击登录按钮
-    $('.btnYes').click(function (event) {        if($("input[name=LoginName]").val()=="") {  //用户名为空时
-            $(".mixfirm").show();
-            mixfirm("用户名不能为空");
-            setTimeout(function() {
-                $(".mixfirm").hide();
-            },1000);
-            return false;
-        }
-        if($("input[name=PSD]").val()=="") {  //密码为空
-            $(".mixfirm").show();
-            mixfirm("密码不能为空");
-            setTimeout(function() {
-                $(".mixfirm").hide();
-            },1000);
-            return false;
-        }
-//         var list1 = $("input[name=LoginName]").val();   //获取当前输入的用户名，根据用户名查SQL
-//         sql("select * from Sys_User_Users where LoginName='"+list1+"'",function(data) {
-//             if(data!=null) {  //如果用户名存在
-//                 var ps1 = data.PSD;  //获取数据库密码
-//                 var ps2 = hex_md5($("input[name=PSD]").val());   //获取输入的密码，并转成md5格式
-//                 if(ps1 == ps2) {  //如果输入的密码正确，执行loginAfter方法
-//                     //用ttyu平台获取所有用户的信息的方法，可以在此写SQL直接查数据库
-// 　　　　　　　　　　　　$("#form1").send({ table: " Sys_User_Users", action: "login", backAfter: "loginAfter"                   });
-//                 }else {  //密码错误，弹框提示
-//                     $(".mixfirm").show();
-//                     mixfirm("密码错误");
-//                     setTimeout(function() {
-//                         $(".mixfirm").hide();
-//                     },1000);
-//                     return false;
-//                 }
-//             }else{  //用户名不存在
-//                 $(".mixfirm").show();
-//                 mixfirm("该用户不存在");
-//                 setTimeout(function() {
-//                     $(".mixfirm").hide();
-//                 },1000);
-//                 return false;
-//             }
-//         })
-    });
-    //登录回调函数
-    // function loginAfter(result) {  //result -- 所有用户信息
-    //     try {
-    //         ttyu.user.saveUser(result);  //当前用户信息
-    //         var names = $("input[name=LoginName]").val();  //获取输入的用户名
-    //         var pwds = $("input[name=PSD]").val();         //获取输入的密码
-    //         localStorage.setItem("loginName",names);       //本地存储
-    //         localStorage.setItem("pwd",pwds); 
-    //         location = "index.html";                       //跳转到首页面
-    //     } catch (e) { 
-    //         firm(result);
-    //     }
-    // }
-</script>
-   
+<script type="text/javascript" src="js/jqsession.js"></script>
+<script type="text/javascript" src="js/dljm.js"></script>   
     <script src="js/bootstrap.min.js"></script>
 
 </body>
