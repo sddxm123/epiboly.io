@@ -1,0 +1,195 @@
+.head {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.head .head-white {
+  border: 1px solid transparent;
+}
+.head .head-white:hover {
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+.z-top .login-user {
+  display: none;
+  position: relative;
+}
+.z-top .login-user > div {
+  position: relative;
+  display: block;
+}
+.z-top .login-user .user-menu {
+  display: none;
+  padding: 10px 0;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.z-top .login-user .user-menu a {
+  display: block;
+  height: 36px;
+  margin: 5px 0;
+  line-height: 36px;
+  text-indent: 1.5rem;
+  color: #323a45;
+}
+.z-top .login-user .user-menu a:hover {
+  background-color: #4289db;
+  color: #fff;
+  text-decoration: none;
+}
+.z-top .login-user .user-menu i {
+  margin-right: 10px;
+}
+.z-top .login-user .user-menu li:nth-child(1) {
+  height: 36px;
+  margin: 5px 0;
+  line-height: 36px;
+  text-indent: 1.5rem;
+  color: #a9a9a9;
+}
+.z-top .login-user:hover .user-menu {
+  display: block;
+}
+.z-top2 .head-white {
+  display: none;
+}
+.z-top2 .login-user {
+  display: block;
+}
+.z-top2 .login-user .user {
+  border-bottom: 15px solid transparent;
+  border-top: 5px solid transparent;
+}
+.user {
+  position: relative;
+  width: 80px;
+  border-bottom: 20px solid transparent;
+  cursor: pointer;
+}
+.user .portrait {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user .portrait img {
+  width: 40px;
+  height: 40px;
+}
+.user i {
+  color: #e0e6ed;
+  font-size: 12px;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+}
+.head a {
+  color: #fff;
+}
+.head .logo {
+  font-size: 30px;
+  color: #e0e6ed;
+}
+.head .logo:hover {
+  color: #e0e6ed;
+}
+.head {
+  background-color: transparent;
+  border: none;
+}
+.head .navbar-nav > li > a {
+  color: #e0e6ed;
+  font-size: 14px;
+  font-weight: 700;
+}
+.head .navbar-nav > li > a:hover {
+  color: #ccd3dc;
+}
+.head .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.head2 .logo {
+  color: #4289dc;
+  font-size: 32px;
+}
+.head2 .logo:hover {
+  color: #4289dc;
+}
+.head2 .navbar-nav > li > a {
+  color: #273444;
+  font-weight: normal;
+  font-size: 13px;
+}
+.head2 .navbar-nav > li > a:hover {
+  color: #4289dc;
+}
+.z-top2 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.z-top2 .head2 {
+  background-color: #fff;
+}
+.foot {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: #273444;
+  color: #fff;
+}
+.foot .logo {
+  font-size: 16px;
+}
+.foot .foot-content ul li {
+  font-size: 14px;
+  padding: 4px 0;
+  color: #8796A8;
+}
+.foot .foot-content ul li a {
+  color: #8796A8;
+}
+.foot .foot-content ul li:nth-child(1) a,
+.foot .foot-content ul li:nth-child(1) {
+  color: #fff;
+  font-weight: 700;
+}
+.foot .foot-copy {
+  text-align: center;
+  display: none;
+}
+.foot img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .foot {
+    padding-top: 0;
+    padding-bottom: 0px;
+  }
+  .foot .foot-content {
+    display: none;
+  }
+  .foot .foot-copy {
+    display: block;
+    position: relative;
+    text-align: left;
+  }
+  .foot .foot-copy span:nth-child(1) {
+    font-size: 22px;
+  }
+  .foot .foot-copy span:nth-child(2) {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+  }
+  .head .navbar-collapse {
+    background: #2d3237;
+  }
+}

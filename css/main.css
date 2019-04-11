@@ -73,21 +73,17 @@ body {
   flex-wrap: wrap;
 }
 .container .right-second .option1 .option1-list .listfirst {
-  width: 62px;
-  height: 25px;
   padding: 4px 17px;
   background: #4289dc;
   text-align: center;
   color: white;
   border-radius: 2px;
-  margin-right: 40px;
-  margin-bottom: 30px;
+  margin: 0  25px 14px 0;
 }
 .container .right-second .option1 .option1-list .list {
-  line-height: 15px;
   display: inline-block;
-  padding: 4px 10px;
-  margin: 0  25px 14px 1.4px;
+  padding: 4px 17px;
+  margin: 0  25px 14px 0;
 }
 .container .md-left {
   position: sticky;
@@ -187,9 +183,6 @@ body {
 .cm-pop .cm-pop-second img {
   width: 154px;
   height: 136px;
-}
-.list{
-  border-radius: 5px;
 }
 @media screen and (max-width: 992px) {
   .left {
