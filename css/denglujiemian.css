@@ -18,6 +18,9 @@ a{
 	color: white;
 
 }
+a:hover{
+	text-decoration: none;
+}
 .wrap{
 	height: 666px;
 }

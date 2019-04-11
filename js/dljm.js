@@ -62,7 +62,8 @@ $('.btnYes').click(function () {
                             },1000);
                         }else{
                             $.session.set("now",username);
-                            $("#loginhref").attr("href","index.html")
+                            window.location.href = "index.html";
+                            // $("#loginhref").attr("href","index.html")
                         }
                     }
                 });
