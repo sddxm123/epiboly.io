@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
-        <script src="js/jquery.js"></script>
+     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jqsession.js"></script>
     <script src="js/tophead.js"></script>
-    <script src="js/inform.js"></script> 
     <link rel="stylesheet" type="text/css" href="css/function.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 </head>
@@ -961,7 +959,7 @@
                                     </table>
                                 </div>
                                 <div class="calculate">
-                                    <button class="button-36ZsW disabled-1k1pJ">下一步</button>
+                                    <button class="button-36ZsW disabled-1k1pJ"><a href="result-1.html">下一步</a></button>
                                 </div>
                                 <div class="qwe"></div>
                             </div>
@@ -1008,6 +1006,24 @@ $(function () {
         container:"body",
         content:"哈哈哈哈"
     });
+    // var wrap = function(){
+    
+        // console.log($("input"));
+    // }
+
+
+    var $inuptArr = $('input');
+    //  var a = $inuptArr;
+        var n =0;
+    $('input').click(function(){
+         if(this.checked == true){
+            n+=1000;
+         }
+        //  n+=1000
+    })
+    $(".calculate>button").click(function(){
+        $.session.set("gujia",n)
+    })
 });
 
 
@@ -1027,7 +1043,9 @@ $(document).ready(function(){
         //     $(".preview-9AiIp").hide();
         // });
     });
+
 });
+
 
 </script>
 
