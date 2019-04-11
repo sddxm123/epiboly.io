@@ -18,13 +18,13 @@ a{
 	color: white;
 
 }
+.clear{
+	clear: both;
+}
 .wrap{
-	height: 666px;
+	height:700px;
 }
-.container{
-	/*width: 100%;*/
-	/*border-bottom:1px solid #9999;*/
-}
+
 
 header{
 	/*width: 100%;*/
@@ -94,23 +94,40 @@ header{
 	padding-bottom: 30px;
 }
 
-/*.row{
-	border-bottom: none;
-}*/
-/*.btn{
-	padding: 10px 120px;
-	vertical-align: center;
-	
-}
-*/
 .form-control{
 	padding: 20px 20px;
 	line-height: 5px;
 }
+.w-yzm{
+	/*margin-bottom: 20px !important;*/
+}
+
+.w-yzm input{
+   padding: 11px 0;
+   border-radius: 5px;
+   outline: none;
+   border:1px solid #9999;
+   text-indent: 1em;
+   font-size: 12px;
+}
+.w-yzm button{
+	border:none;
+	outline: none;
+	background-color:#4289DB;
+	color: white; 
+	padding: 11px 10px;
+	border-radius: 5px;
+	margin-left: 5px;
+	font-size: 12px;
+
+}
+
 
 .button{
 	background-color: #4289DB;
 	color: white;
+	/*margin-top: 10px;*/
+
 }
 .button:hover{
 	background-color: red;
@@ -118,8 +135,8 @@ header{
 }
 
 .zhmm{
-	display: flex;
-	justify-content: flex-start;
+	/*display: flex;*/
+	/*justify-content: flex-start;*/
 	padding-bottom: 10px;
 }
 
@@ -145,8 +162,14 @@ header{
 .fh p a{
 	color: gray;
 }
+
+.fh p a:hover{
+	text-decoration: none;
+	color: red;
+}
 footer{
 	width: 100%;
+	padding-top: 80px;
 	position: fixed;
 	bottom: 0;
 }
@@ -173,7 +196,7 @@ footer p span{
     background-color:#f2dede;
     opacity: 0.8;
     position: fixed;
-    bottom: 45%;
+    bottom: 30%;
     left: 45%;
     margin-left: -62px;
     margin-top: -20PX;
