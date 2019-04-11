@@ -81,7 +81,7 @@
     margin: 0 auto;
     margin-top: 20px;
     overflow: hidden;
-    /* display: none; */
+    /* margin-bottom: 25px; */
 }
 .paier{
     width: 80%;
@@ -90,6 +90,7 @@
     margin-top: 20px;
     overflow: hidden;
     display: none;
+    
 }
 .shoruli{
     /* background-color: #bcff70; */

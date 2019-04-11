@@ -30,7 +30,7 @@ $(function(){
                 </div>
                 <span>报名数 5 </span>
                 <span> | </span>
-                <span style="color:`+ jeson[i].col +`">`+jeson[i].zhuangtai+`</span>
+                <span style="color:`+ jeson[i].col +`"><span class="zhuantaio">`+jeson[i].zhuangtai+`</span></span>
             </div>
             <div class="cebla"></div>
         </div>
@@ -67,8 +67,17 @@ $(function(){
             <div class="cebla"></div>
         </div>
     </div>
-                `);
+                `)
                 $(".dierge").append(odiv);
+
+                $(".qux").click(function(){
+                    $(this).css("display","none");
+                    $(this).next().css("display","none");
+                    $(this).parents(".dierge_san").siblings(".hezizj").find(".zhuantaio").css("color","#696969");
+                    $(this).parents(".dierge_san").siblings(".hezizj").find(".zhuantaio").text("已取消");
+                });
+                
+                
             }
             // alert(jeson)
             // for (i = 0; i < jeson.length; i++) {
@@ -83,7 +92,7 @@ $(function(){
                     console.log(_this.text(),jeson[i].zhuangtai)
 
                         var odiv = $(`
-                <div class="dierge_er ">
+    <div class="dierge_er ">
         <div class="hezizj row">
             <!-- hezizj是包上面的盒子 -->
             <div class="hezizj_zuo col-md-6 col-xs-5">
@@ -100,7 +109,7 @@ $(function(){
                 </div>
                 <span>报名数 5 </span>
                 <span> | </span>
-                <span style="color:`+ jeson[i].col +`">`+jeson[i].zhuangtai+`</span>
+                <span style="color:`+ jeson[i].col +`"><span class="zhuantaio">`+jeson[i].zhuangtai+`</span></span>
             </div>
             <div class="cebla"></div>
         </div>
@@ -138,19 +147,30 @@ $(function(){
         </div>
     </div>
                 `);
+                
                 $(".dierge").append(odiv);
                 console.log($(".dierge"))
 
                     }
+                    $(".qux").click(function(){
+                        $(this).css("display","none");
+                        $(this).next().css("display","none");
+                        $(this).parents(".dierge_san").siblings(".hezizj").find(".zhuantaio").css("color","#696969");
+                        $(this).parents(".dierge_san").siblings(".hezizj").find(".zhuantaio").text("已取消");
+                    });
+                    
 
                 })
             });
+            
         },
 
         error: function (a) {
             console.log(55,a)
         }
     });
+    console.log($(".qux"));
+    
     
 });
 
