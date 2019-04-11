@@ -175,6 +175,16 @@ main{
 }
 
 
+.pcode{
+	position: relative;
+}
+#canvas{
+	position: absolute;
+	right: 17px;
+	top: 22px;
+	width: 90px;
+	height: 31px;
+}
 
 .notice{
 	padding: 2.5rem;
