@@ -19,7 +19,7 @@
         height: 126px;
         background: #fff;
         border: 1px solid #ccc;
-        margin-top: -15px;
+        margin-top: -85px;
     }
     #one{
         line-height: 126px;
@@ -452,15 +452,22 @@
     margin-top: 10px;
 }
 
-
-
+#wrap label{
+    cursor: pointer;
+}
+ .button-a a{
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    cursor: not-allowed;
+}
 .next{
     margin: 25px auto;
     text-align: center;
 }
 .button-a{
     background: #8796a8;
-    cursor: not-allowed;
+    /* cursor: not-allowed; */
     width: 33%;
     height: 58px;
     line-height: 21px;

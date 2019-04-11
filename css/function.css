@@ -19,7 +19,7 @@ body{
     height: 150px;
     background: #fff;
     border: 1px solid #ccc;
-    margin-top: -15px;
+    margin-top: -85px;
 }
 #one{
     line-height: 126px;
@@ -34,7 +34,8 @@ body{
 }
 .box{
     height: 52px;
-    background:#4289db;
+    
+    background-color: rgba(137,150,166,.5) ;
     padding: 19px 20px 8px 15px; 
     margin-right: 10px;
     border-radius: 4px;
@@ -59,7 +60,7 @@ body{
 }
 .box1{
     height: 52px;
-    background-color: rgba(137,150,166,.5) ;
+    background:#4289db;
     padding: 19px 20px 8px 15px; 
     margin-right: 10px;
     border-radius: 4px;
@@ -213,6 +214,7 @@ em{
      border-radius: .4rem;
      box-sizing: border-box;
      border: 0;
+     width: 100px;
      font-size: 1rem;
      box-shadow: 0 3px 3px rgba(45,51,56,.2);
      outline: none;
@@ -230,7 +232,7 @@ em{
  }
  .button-36ZsW{
      background-color: #8796a8;
-     cursor: not-allowed !important;
+     /* cursor: not-allowed !important; */
      width: 33%;
      height: 41px;
      line-height: 21px;
@@ -288,8 +290,67 @@ em{
      height: 100px;
      /* width: 100%; */
  }
+ .popover{
+     width: 600px;
+    height: 300px;
+    border: 1px solid rgba(0,0,0,.2);
+    background: url(../img/4.png)no-repeat 50% #fff;
+}
+.preview-9AiIp{
+    /* display: none; */
+    position: absolute;
+    min-height: 100px;
+    right: 425px;
+    transition: 0.5s;
+    top: 221px;
+    /* border: 1px solid rgba(0,0,0,.2); */
+    /* transition: top .3s cubic-bezier(.42,0,.12,1.57); */
+}
+.inner-1ABkK{
+    position: relative;
+    width: 170px;
+    padding: 15px 10px;
+    border-radius: 4px;
+    margin-left: 4px;
+    box-sizing: border-box;
+    background: #fff;
+    transition: top .3s ease-in-out;
+    z-index: 2;
+}
+.inner-1ABkK h2{
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 10px;
+    color: #4289db;
+}
+.nnow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.preview-9AiIp article{
+    font-size: 8px;
+    color: #2d3238;
+    line-height: 14px;
+}
+.preview-9AiIp .previewIcon-1msWi{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.preview-9AiIp .previewIcon-1msWi img{
+    width: 140px;
+    margin: 0 auto;
+}
 @media screen and (max-width:768px){
     .choose-2meKd{
         padding: 0 25px;
+    }
+}
+@media screen and (min-width:992px){
+    .col-md-9 {
+        width: 95%;
     }
 }

@@ -206,7 +206,7 @@ ul{
 #mart-footer{
   width: 100%;
   bottom: 0;
-  /* position: absolute; */
+  position: absolute;
   box-sizing: border-box;
 }
 #simple-footer{
