@@ -18,19 +18,65 @@
     <script src="js/jqsession.js"></script>
     <script>
         $(function(){
-            
-            if($.session.get("now")){
-                console.log(1)
-            };
-            $("button").click(function(){
-                nowuser=$("#username").val();
-
-                $.session.set("now",nowuser);
-                $.session.get(nowuser);
-                console.log($.session.get("now"))
-                var str="<p>"+$.session.get("now");+"</p>";
-                $("#test").append(str)
+            // $("button").click(function (e) { 
+            //     e.preventDefault();
+            //     console.log($("#username").val(),$("#password").val())
+            //     $.ajax({
+            //         type:"POST",
+            //         url:"http://47.106.220.143:8080/xiaobai/worker",
+            //         data:{
+            //             name:$("#username").val(),
+            //             password:$("#password").val(),
+            //             email:"2036023557@qq.com"
+            //         },
+            //         success:function(data){
+            //             console.log(data);
+            //         }
+            //     })
+            // });
+            $.ajax({
+                type:"POST",
+                url:"http://47.106.220.143:8080/company",
+                data:{
+                    name:"zcf",
+                    password:"123456",
+                    email:"20@qq.com"
+                },
+                success:function(result){
+                    console.log(result)
+                },
+                error:function(res){
+                    console.log(res)
+                }
             })
+            // $.ajax({
+            //     type:"POST",
+            //     url:"http://10.10.8.50:8101/item/list",
+            //     data:{
+            //         page:1,
+            //         rows:20
+            //     },
+            //     success:function(data){
+            //         console.log(data)
+            //     }
+            // })
+
+
+
+
+            // if($.session.get("now")){
+            //     console.log(1)
+            // };
+            // $("button").click(function(){
+            //     nowuser=$("#username").val();
+
+            //     $.session.set("now",{name:"aaa",age:"12"});
+            //     $.session.get(nowuser);
+            //     console.log($.session.get("now"))
+            //     var str="<p>"+$.session.get("now");+"</p>";
+            //     $("#test").append(str)
+            // })
+
         })
     </script>
 </body>
