@@ -168,22 +168,22 @@ footer p span{
 	}
 }
 .mixfirm {
-    width: 150px;
+    width: 250px;
     height: 40px;
-    background-color: red;
+    background-color:#f2dede;
     opacity: 0.8;
     position: fixed;
     bottom: 45%;
-    left: 49%;
+    left: 45%;
     margin-left: -62px;
     margin-top: -20PX;
     text-align: center;
     display: none;
     padding: 0 10px;
     z-index: 30;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 .mixfirm h4 {
     margin-top: 13px;
-    color: #fff;
+    color:#a94442;
 }

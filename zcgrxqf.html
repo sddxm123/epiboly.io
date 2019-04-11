@@ -39,19 +39,21 @@
 
                   <!-- 用户名注册 -->
                     <div class="form-group"> 
-                        <input id="username" class="form-control" name="LoginName" type="text" placeholder="用户名（即个性后缀，注册后无法修改）">
+                        <input id="username" class="form-control" name="LoginName" type="text" placeholder="请输入6个以上的数字或则字母）">
                     </div>
                     
                     <!-- 密码设置 -->
                     <div class="form-group">  
-                        <input id="password" name="PSD" class="form-control" type="password" placeholder="请输入密码:">
+                        <input id="password" name="PSD" class="form-control" type="password" placeholder="密码需要6到16个字母与数字字符结合:">
                     </div>
                     <!-- 再次确定密码 -->
                     <div class="form-group">
                         <input id="setpassword" class="form-control" type="password" placeholder="请再次认密码:">
                         <!-- <div id="repwd_prompt"></div> -->
                     </div>
+                    
 
+                    <!-- 我同意遵守 -->
                     <div class="zhmm" id="ls">
                         <input type="checkbox" name="remember" class="ant-checkbox-input" value="on">
                         <span>我同意遵守</span><span><a href="">《码市用户服务协议》</a></span>
@@ -92,13 +94,14 @@
                    //当前页面打开
                }
 
-           //确认弹出框js
+           //确认弹出框js判断
             function mixfirm(obj) {
               var strs = '<h4>'+obj+'</h4>';
               $(".mixfirm").html(strs);
               $(".mixfirm").show();
            }
-
+           
+           // 用户名不能为空判断
             $('#w-btn').click(function (event) {        if($("input[name=LoginName]").val()=="") {  //用户名为空时
             $(".mixfirm").show();
             mixfirm("用户名不能为空");
@@ -107,6 +110,8 @@
             },1000);
             return false;
         }
+
+        // 密码为空判断
         if($("input[name=PSD]").val()=="") {  //密码为空
             $(".mixfirm").show();
             mixfirm("密码不能为空");
@@ -114,8 +119,21 @@
                 $(".mixfirm").hide();
             },1000);
             return false;
-        }
-    });
+           }
+        });
+         
+
+         // 两次密码判断
+        $("#w-btn").click(function(){
+           if(password.value!=setpassword.value){
+            mixfirm("两次密码错误");
+            setpassword.style.border='1px solid red';
+            setTimeout(function(){
+               $(".mixfirm").hide();
+            },1000);
+            return false;
+           }
+        })
 
 
 
@@ -155,17 +173,17 @@
             console.log("密码需要6到16个字母与数字字符结合")
           }
 
-       setpassword.onblur=function(){
-        if(password.value==setpassword.value){
-          setpassword.style.border='1px solid #eee';
-          console.log(true)
+       // setpassword.onblur=function(){
+       //  if(password.value==setpassword.value){
+       //    setpassword.style.border='1px solid #eee';
+       //    console.log(true)
          
-        }else{
-          setpassword.style.border='1px solid red';
-          setpassword.setAttribute("placeholder","2次输入密码不一样")
-          console.log(false)
-        }
-       }
+       //  }else{
+       //    setpassword.style.border='1px solid red';
+       //    setpassword.setAttribute("placeholder","2次输入密码不一样")
+       //    console.log(false)
+       //  }
+       // }
 
 </script>
  <script src="js/bootstrap.min.js"></script>
