@@ -288,16 +288,16 @@
                 prevEl: '.swiper-button-prev',
             },
         })
-        $.getJSON("http://47.106.220.143:8080/xiaobai/project/totalMoney",function(res){
+        $.getJSON("http://47.106.220.143:8080/project/totalMoney",function(res){
             if(res.data>1000){
                 res.data = res.data.toLocaleString();
             }
             $("#totalMoney").html(res.data)
         })
-        $.getJSON("http://47.106.220.143:8080/xiaobai/project/number",function(res){
+        $.getJSON("http://47.106.220.143:8080/project/number",function(res){
             $("#pnum").html(res.data)
         })
-        $.getJSON("http://47.106.220.143:8080/xiaobai/worker/number",function(res){
+        $.getJSON("http://47.106.220.143:8080/worker/number",function(res){
             $("#wnum").html(res.data)
         })
     </script>

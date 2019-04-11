@@ -138,9 +138,9 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="input-group">
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control search">
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button">
+                                                <button class="btn btn-default searchbtn" type="button">
                                                     Search
                                                 </button>
                                             </span>
@@ -154,7 +154,7 @@
 
 
               <div class="item-list">
-                  <div class="item-list1">
+                  <!-- <div class="item-list1">
                       <div class="item-list1-left">
                          <img src="img/1.png" alt="">
                       </div>
@@ -179,7 +179,7 @@
                   </div>
 
 
-                    <!-- 第二段 -->
+               
                    
                   <div class="item-list1">
                         <div class="item-list1-left">
@@ -203,7 +203,7 @@
                           </p>
                              
                         </div>
-                    </div>
+                    </div> -->
               </div>
 
 
@@ -480,77 +480,9 @@
                         console.log(i)
                     })
                  
-
-                    // $(".option1-list div").on("click",function(){
-                    //     var _this = $(this);
-                    //     $(".item-list > div").remove();
-                    //     $.each(data,function(i,n){
-                            
-                    //     })
-                    // })
-
-
-
                     $(".option1-list div").on("click",function(){
                         var _this = $(this);
                         $(".item-list > div").remove(); 
-                        // var nowlist=data;
-                        // console.log(nowlist);
-                        // if($(".listfirst").eq(0).text()!="全部"){
-                        //     $.each(nowlist,function(i,n){
-                        //         console.log(i)
-
-                        //     if($(".listfirst").eq(0).text() != n.name){
-                        //             nowlist.splice(i,1);
-                        // console.log(nowlist);
-
-                        //             console.log(n.name)
-                        //         }
-                        //     })
-
-                        // }
-                        // if($(".listfirst").eq(1).text()!="全部"){
-                        //     $.each(nowlist,function(i,n){
-                        //         if($(".listfirst").eq(1).text()!= n.desc){
-                        //             nowlist.splice(i,1)
-                        //         }
-                        //     })
-                        // }
-                        // if($(".listfirst").eq(2).text()!="全部"){
-                        //     $.each(nowlist,function(i,n){
-                        //         if($(".listfirst").eq(2).text()!= n.typeName){
-                        //             nowlist.splice(i,1)
-                        //         }
-                        //     })
-                        // }
-                        // $.each(nowlist,function(i,n){
-                        //         var str = $(
-                        //             `<div class="item-list1">
-                        //             <div class="item-list1-left">
-                        //                 <img src="img/`+data[i].imgUrl+`" alt="">
-                        //             </div>
-
-                        //             <div class="item-list1-right">
-                        //                 <div class="right-1">
-                        //                         NO.`+data[i].id+` `+data[i].title+`
-                        //                         <span>`+data[i].desc+`</span>
-                        //                 </div>
-                        //                 <p class="right-2">
-                        //                     <span class="right-2-span">招募:`+data[i].typeName+`</span>
-                        //                     <span class="right-2-span">类型:`+data[i].name+`</span>
-                        //                     <span class="right-2-span">周期:30天</span>
-                        //                     <span class="right-2-span1">可议价 <label class="lab1">￥`+data[i].price+`</label></span>
-                        //                 </p>
-
-                        //                 <p class="right-3">
-                        //                     2 天前发布 | 10人报名
-                        //                 </p>
-                                        
-                        //             </div>
-                        //         </div>`
-                        //         )
-                        //         $(".item-list").append(str)
-                        // })
                         $.each(data,function(i,n){
                             if(_this.text() == n.name){
                                 var str = $(
@@ -684,6 +616,40 @@
 
                     })
                     
+                    $(".searchbtn").click(function (e) { 
+                        e.preventDefault();
+                        $(".item-list > div").remove(); 
+                        $.each(data,function(i,n){
+                            if(n.title.indexOf($(".search").val())>=0){
+                                var str = $(
+                                    `<div class="item-list1">
+                                    <div class="item-list1-left">
+                                        <img src="img/`+data[i].imgUrl+`" alt="">
+                                    </div>
+
+                                    <div class="item-list1-right">
+                                        <div class="right-1">
+                                                NO.`+data[i].id+` `+data[i].title+`
+                                                <span>`+data[i].desc+`</span>
+                                        </div>
+                                        <p class="right-2">
+                                            <span class="right-2-span">招募:`+data[i].typeName+`</span>
+                                            <span class="right-2-span">类型:`+data[i].name+`</span>
+                                            <span class="right-2-span">周期:30天</span>
+                                            <span class="right-2-span1">可议价 <label class="lab1">￥`+data[i].price+`</label></span>
+                                        </p>
+
+                                        <p class="right-3">
+                                            2 天前发布 | 10人报名
+                                        </p>
+                                        
+                                    </div>
+                                </div>`
+                                )
+                                $(".item-list").append(str)
+                            }
+                        })
+                    });
                 },
                 error:function(){
                     console.log(1)

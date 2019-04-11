@@ -1,5 +1,38 @@
 $(function () {
-    
+    if($.session.get("nowdata")==0){
+        $.ajax({
+            type: "POST",
+            url: "http://47.106.220.143:8080/worker/login",
+            data:{
+                name:$.session.get("now"),
+                password:123
+            },
+            success:function(res){
+                console.log(res);
+                $(".user-name").html(res.data.workerNickName);
+                $("#email").html(res.data.email);
+                $("#phone").html(res.data.phone);
+
+            }
+        })
+    }else{
+        $.ajax({
+            type: "POST",
+            url: "http://47.106.220.143:8080/company/login",
+            data:{
+                name:$.session.get("now"),
+                password:123
+            },
+            success:function(res){
+                console.log(res);
+                $(".user-name").html(res.data.companyNickName);
+                $("#email").html(res.data.email);
+                $("#phone").html(res.data.phone);
+
+            }
+        })
+    }
+
     $(document).scrollTop(10)
     if ($(document).scrollTop() > 0) {
         $('.foot').css("position", "initial")
@@ -31,4 +64,5 @@ $(function () {
     $('.skillshint em').click(function () {
         $(this).parent().hide();
     })
+
 })

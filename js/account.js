@@ -1,4 +1,35 @@
 $(function(){
+    if($.session.get("nowdata")==0){
+        $.ajax({
+            type: "POST",
+            url: "http://47.106.220.143:8080/worker/login",
+            data:{
+                name:$.session.get("now"),
+                password:123
+            },
+            success:function(res){
+                console.log(res);
+                $("#money").html(res.data.totalMoney.toLocaleString());
+
+            }
+        })
+    }else{
+        $.ajax({
+            type: "POST",
+            url: "http://47.106.220.143:8080/company/login",
+            data:{
+                name:$.session.get("now"),
+                password:123
+            },
+            success:function(res){
+                console.log(res);
+                $("#money").html(res.data.money.toLocaleString());
+
+
+            }
+        })
+    }
+
     $(".span3").click(function (e) { 
         e.preventDefault();
         $(".span3").css("box-shadow","");

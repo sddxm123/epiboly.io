@@ -18,7 +18,8 @@ function mixfirm(obj) {
 $('.btnYes').click(function () {
     var username = $("#username").val();
     var psw = $("#setpassword").val();  
-    console.log(username,psw)
+    console.log(username,psw);
+
     var wdata;
     var cdata;
  
@@ -34,7 +35,7 @@ $('.btnYes').click(function () {
         setTimeout(function() {
             $(".mixfirm").hide();
         },1000);
-    }else{
+    }else{  //都不为空  判断
         $.ajax({
             type: "POST",
             url: "http://47.106.220.143:8080/worker/login",
@@ -42,8 +43,8 @@ $('.btnYes').click(function () {
                 name:username,
                 password:psw
             },
-            success: function (res) {
-                wdata=res.data;
+            success: function (res) {   //先验证看是不是worker得账号
+                wdata=res.data;         //如果账号或密码错误都是返回   -1
                 $.ajax({
                     type: "POST",
                     url: "http://47.106.220.143:8080/company/login",
@@ -61,6 +62,11 @@ $('.btnYes').click(function () {
                                 $(".mixfirm").hide();
                             },1000);
                         }else{
+                            if(wdata!=-1){
+                                $.session.set("nowdata",0);
+                            }else{
+                                $.session.set("nowdata",1);                                
+                            }
                             $.session.set("now",username);
                             window.location.href = "index.html";
                             // $("#loginhref").attr("href","index.html")
