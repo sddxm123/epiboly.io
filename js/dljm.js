@@ -54,7 +54,7 @@ $('.btnYes').click(function () {
                     },
                     success: function (res) {
                         cdata=res.data;
-                        console.log(wdata,cdata)
+                        console.log(wdata,cdata)    
                         if(wdata==-1 && cdata==-1){
                             $(".mixfirm").show();
                             mixfirm("账号或密码错误");

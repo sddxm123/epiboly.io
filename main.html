@@ -352,6 +352,7 @@
 
         <script src="js/jqsession.js"></script>
         <script src="js/tophead.js"></script>
+        
            <script>
                $(function(){
                 $(".cm-button").mouseover(function(){
@@ -459,7 +460,7 @@
 
                             <div class="item-list1-right">
                                 <div class="right-1">
-                                        NO.`+data[i].id+` `+data[i].title+`
+                                        NO.`+data[i].id+`<i> `+data[i].title+`</i>
                                         <span>`+data[i].desc+`</span>
                                 </div>
                                 <p class="right-2">
@@ -493,7 +494,7 @@
 
                                     <div class="item-list1-right">
                                         <div class="right-1">
-                                                NO.`+data[i].id+` `+data[i].title+`
+                                                NO.`+data[i].id+`<i> `+data[i].title+`</i>
                                                 <span>`+data[i].desc+`</span>
                                         </div>
                                         <p class="right-2">
@@ -524,7 +525,7 @@
 
                                     <div class="item-list1-right">
                                         <div class="right-1">
-                                                NO.`+data[i].id+` `+data[i].title+`
+                                                NO.`+data[i].id+`<i> `+data[i].title+`</i>
                                                 <span>`+data[i].desc+`</span>
                                         </div>
                                         <p class="right-2">
@@ -553,7 +554,7 @@
 
                                     <div class="item-list1-right">
                                         <div class="right-1">
-                                                NO.`+data[i].id+` `+data[i].title+`
+                                                NO.`+data[i].id+`<i> `+data[i].title+`</i>
                                                 <span>`+data[i].desc+`</span>
                                         </div>
                                         <p class="right-2">
@@ -610,7 +611,7 @@
 
 
 
-
+                        projectclick()
 
 
 
@@ -629,7 +630,7 @@
 
                                     <div class="item-list1-right">
                                         <div class="right-1">
-                                                NO.`+data[i].id+` `+data[i].title+`
+                                                NO.`+data[i].id+`<i>`+data[i].title+`</i>
                                                 <span>`+data[i].desc+`</span>
                                         </div>
                                         <p class="right-2">
@@ -649,7 +650,19 @@
                                 $(".item-list").append(str)
                             }
                         })
+                        projectclick()
                     });
+                    projectclick()
+                    function projectclick(){
+                        $(".item-list1").click(function (e) { 
+                            e.preventDefault();
+                            console.log($(this).children(".item-list1-right").children(".right-1").children("i").html())
+                            $.session.set("nowproject",$(this).children(".item-list1-right").children(".right-1").children("i").html())
+                            // window.location.href = "Studio-details.html";
+                        });
+                    }
+                    
+                
                 },
                 error:function(){
                     console.log(1)
@@ -662,6 +675,6 @@
            
            
            </script>
-      
+      <!-- <script src="js/main.js"></script> -->
 </body>
 </html>
